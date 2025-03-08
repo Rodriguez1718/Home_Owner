@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HomeOwner</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="~/Content/classy-nav.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+          referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="~/Content/magnific-popup.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Content/owl.carousel.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Content/nice-select.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Content/jquery-ui.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Content/style.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="south-load"></div>
+    </div>
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="h-100 d-md-flex justify-content-between align-items-center">
+                <div class="email-address">
+                    <a href="mailto:krisjohn.rodriguez@gmail.com">krisjohn.rodriguez@gmail.com</a>
+                </div>
+                <div class="phone-number d-flex">
+                    <div class="icon">
+                        <img src="~/img/icons/phone-call.png" alt="">
+                    </div>
+                    <div class="number">
+                        <a href="tel:+65 926 936 4245">+65 926 936 4245</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header Area -->
+        <div class="main-header-area" id="stickyHeader">
+            <div class="classy-nav-container breakpoint-off">
+                <!-- Navigation container with data attributes -->
+                <div class="classy-nav-container"
+                     data-classy-nav
+                     data-theme="light"
+                     data-breakpoint="991"
+                     data-open-close-speed="300"
+                     data-open-mobile-menu="left"
+                     data-dropdown-rtl="false"
+                     data-sticky-nav="false"
+                     data-sticky-footer-nav="false">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="southNav">
+                        <!-- Logo -->
+                        <a class="nav-brand" asp-controller="Home" asp-action="Index">
+                            <img src="~/img/core-img/logo.png" alt="">
+                        </a>
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                                    <li>
+                                        <a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                                            <li><a asp-controller="Home" asp-action="About">About Us</a></li>
+                                            <li>
+                                                <a href="#">Listings</a>
+                                                <ul class="dropdown">
+                                                    <li><a asp-controller="Home" asp-action="Listings">Listings</a></li>
+                                                    <li><a asp-controller="Home" asp-action="SingleListings">Single Listings</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Blog</a>
+                                                <ul class="dropdown">
+                                                    <li><a asp-controller="Home" asp-action="Blog">Blog</a></li>
+                                                    <li><a asp-controller="Home" asp-action="SingleBlog">Single Blog</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                                            <li><a asp-controller="Home" asp-action="Elements">Elements</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a asp-controller="Home" asp-action="About">About Us</a></li>
+                                    <li><a asp-controller="Home" asp-action="Listings">Properties</a></li>
+                                    <li><a asp-controller="Home" asp-action="Blog">Blog</a></li>
+                                    <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                                </ul>
+
+                                <!-- Search Form -->
+                                <div class="south-search-form">
+                                    <form action="#" method="post">
+                                        <input type="search" name="search" id="search" placeholder="Search Anything ...">
+                                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </form>
+                                </div>
+                                <!-- Search Button -->
+                                <a href="#" class="searchbtn"><i class="fa" aria-hidden="true"></i></a>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area section-padding-100-0 bg-img gradient-background-overlay" style="background-image: url('@Url.Content("~/img/bg-img/cta.jpg")');">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row">
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="footer-widget-area mb-100">
+                            <!-- Widget Title -->
+                            <div class="widget-title">
+                                <h6>About Us</h6>
+                            </div>
+                            <img src="~/img/bg-img/footer.jpg" alt="">
+                            <div class="footer-logo my-4">
+                                <img src="~/img/core-img/logo.png" alt="">
+                            </div>
+                            <p>Integer nec bibendum lacus. Suspen disse dictum enim sit amet libero males uada feugiat. Praesent malesuada.</p>
+                        </div>
+                    </div>
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="footer-widget-area mb-100">
+                            <!-- Widget Title -->
+                            <div class="widget-title">
+                                <h6>Hours</h6>
+                            </div>
+                            <div class="weekly-office-hours">
+                                <ul>
+                                    <li class="d-flex align-items-center justify-content-between"><span>Monday - Friday</span> <span>09 AM - 19 PM</span></li>
+                                    <li class="d-flex align-items-center justify-content-between"><span>Saturday</span> <span>09 AM - 14 PM</span></li>
+                                    <li class="d-flex align-items-center justify-content-between"><span>Sunday</span> <span>Closed</span></li>
+                                </ul>
+                            </div>
+                            <div class="address">
+                                <h6><img src="~/img/icons/phone-call.png" alt=""> +45 677 8993000 223</h6>
+                                <h6><img src="~/img/icons/envelope.png" alt=""> office@template.com</h6>
+                                <h6><img src="~/img/icons/location.png" alt=""> Main Str. no 45-46, b3, 56832, Los Angeles, CA</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="footer-widget-area mb-100">
+                            <div class="widget-title">
+                                <h6>Useful Links</h6>
+                            </div>
+                            <ul class="useful-links-nav d-flex align-items-center">
+                                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                                <li><a asp-controller="Home" asp-action="About">About us</a></li>
+                                <li><a asp-controller="Home" asp-action="About">About us</a></li>
+                                <li><a asp-controller="Home" asp-action="Services">Services</a></li>
+                                <li><a asp-controller="Home" asp-action="Properties">Properties</a></li>
+                                <li><a asp-controller="Home" asp-action="Listings">Listings</a></li>
+                                <li><a asp-controller="Home" asp-action="Testimonials">Testimonials</a></li>
+                                <li><a asp-controller="Home" asp-action="Properties">Properties</a></li>
+                                <li><a asp-controller="Home" asp-action="Blog">Blog</a></li>
+                                <li><a asp-controller="Home" asp-action="Testimonials">Testimonials</a></li>
+                                <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                                <li><a asp-controller="Home" asp-action="Elements">Elements</a></li>
+                                <li><a asp-controller="Home" asp-action="FAQ">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="footer-widget-area mb-100">
+                            <div class="widget-title">
+                                <h6>Featured Properties</h6>
+                            </div>
+                            <div class="featured-properties-slides owl-carousel">
+                                <div class="single-featured-properties-slide">
+                                    <a href="#"><img src="~/img/bg-img/fea-product.jpg" alt=""></a>
+                                </div>
+                                <div class="single-featured-properties-slide">
+                                    <a href="#"><img src="~/img/bg-img/fea-product.jpg" alt=""></a>
+                                </div>
+                                <div class="single-featured-properties-slide">
+                                    <a href="#"><img src="~/img/bg-img/fea-product.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copywrite-text d-flex align-items-center justify-content-center">
+            <p>
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+            </p>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+    <!-- Scripts -->
+    <!-- Ensure jQuery loads first -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+    <!-- Load Popper.js before Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+            integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Other Plugins -->
+    <script src="~/js/plugins.js"></script>
+    <!-- ClassyNav Plugin -->
+    <script src="~/js/classy-nav.min.js"></script>
+    <!-- ClassyNav Initialization (using data attributes) -->
+    <script src="~/js/nav-init.js"></script>
+    <!-- Active JS -->
+    <script src="~/js/active.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "wwwroot/Content/scss/style.css",
+    "inputFile": "wwwroot/Content/scss/style.scss"
+  },
+  {
+    "outputFile": "wwwroot/Content/scss/_mixin.css",
+    "inputFile": "wwwroot/Content/scss/_mixin.scss"
+  }
+]
