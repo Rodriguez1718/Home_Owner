@@ -1,47 +1,44 @@
-// File: HomeOwner/Pages/Account/Login.cshtml.cs
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Threading.Tasks;
 
-public class LoginModel : PageModel
+namespace HomeOwner.Pages.Account
 {
-    private readonly SignInManager<IdentityUser> _signInManager;
-
-    public LoginModel(SignInManager<IdentityUser> signInManager)
+    public class LoginModel : PageModel
     {
-        _signInManager = signInManager;
-        Input = new InputModel();
-    }
+        private readonly SignInManager<IdentityUser> _signInManager;
 
-    [BindProperty]
-    public InputModel Input { get; set; }
-
-    public class InputModel
-    {
-        public string Email { get; set; } = string.Empty;
-        public string Password { get; set; } = string.Empty;
-    }
-
-    public void OnGet()
-    {
-    }
-
-    public async Task<IActionResult> OnPostAsync()
-    {
-        if (ModelState.IsValid)
+        public LoginModel(SignInManager<IdentityUser> signInManager)
         {
-            var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, false, lockoutOnFailure: false);
-            if (result.Succeeded)
-            {
-                return RedirectToPage("/Index");
-            }
-            else
-            {
-                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
-            }
+            _signInManager = signInManager;
         }
 
-        return Page();
+        [BindProperty]
+        public InputModel Input { get; set; } = new InputModel();
+
+        public class InputModel
+        {
+            public string Email { get; set; } = string.Empty;
+            public string Password { get; set; } = string.Empty;
+        }
+
+        public void OnGet()
+        {
+        }
+
+        public async Task<IActionResult> OnPostAsync()
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, false, lockoutOnFailure: false);
+                if (result.Succeeded)
+                {
+                    return RedirectToPage("/Index");
+                }
+                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+            }
+            return Page();
+        }
     }
 }

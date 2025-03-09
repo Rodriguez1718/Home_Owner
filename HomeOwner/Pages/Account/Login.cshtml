@@ -1,31 +1,25 @@
 ﻿@page
-@model LoginModel
-
-<head>
-    <link rel="stylesheet" href="~/css/login.css" />
-</head>
-
-<div class="container">
-    <h2>Login</h2>
-
-    <form method="post">
-        <div class="form-group">
-            <label asp-for="Input.Email"></label>
-            <input asp-for="Input.Email" class="form-control" />
-            <span asp-validation-for="Input.Email" class="text-danger"></span>
-        </div>
-        <div class="form-group">
-            <label asp-for="Input.Password"></label>
-            <input asp-for="Input.Password" class="form-control" type="password" />
-            <span asp-validation-for="Input.Password" class="text-danger"></span>
-        </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-    </form>
-
-    <p>
-        <a asp-page="/Account/Register">Don't have an account? Register here.</a>
-    </p>
-</div>
+@model HomeOwner.Pages.Account.LoginModel
+@{
+    Layout = "_Layout"; // Adjust if you have a different layout
+}
+<h2>Login</h2>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Input.Email"></label>
+        <input asp-for="Input.Email" class="form-control" />
+        <span asp-validation-for="Input.Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Input.Password"></label>
+        <input asp-for="Input.Password" class="form-control" type="password" />
+        <span asp-validation-for="Input.Password" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+<p>
+    <a asp-page="./Register">Don't have an account? Register here.</a>
+</p>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
