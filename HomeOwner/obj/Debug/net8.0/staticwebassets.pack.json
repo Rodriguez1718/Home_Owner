@@ -81,6 +81,10 @@
       "PackagePath": "staticwebassets\\compilerconfig.json"
     },
     {
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -143,6 +147,22 @@
     {
       "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\fonts\\themify.woff",
       "PackagePath": "staticwebassets\\fonts\\themify.woff"
+    },
+    {
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\Castillo.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\Castillo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\Langomez.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\Langomez.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\Patac.png",
+      "PackagePath": "staticwebassets\\img\\bg-img\\Patac.png"
+    },
+    {
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\Rodriguez.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\Rodriguez.jpg"
     },
     {
       "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\about.jpg",

@@ -17,6 +17,7 @@ wwwroot\Content\scss\style.scss
 wwwroot\Content\style.css
 wwwroot\Content\style.css.map
 wwwroot\Content\themify-icons.css
+wwwroot\css\login.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\fonts\classy.eot
@@ -34,6 +35,7 @@ wwwroot\fonts\themify.svg
 wwwroot\fonts\themify.ttf
 wwwroot\fonts\themify.woff
 wwwroot\img\bg-img\about.jpg
+wwwroot\img\bg-img\Castillo.jpg
 wwwroot\img\bg-img\cta.jpg
 wwwroot\img\bg-img\editor.jpg
 wwwroot\img\bg-img\fea-product.jpg
@@ -52,7 +54,10 @@ wwwroot\img\bg-img\hero2.jpg
 wwwroot\img\bg-img\hero3.jpg
 wwwroot\img\bg-img\hero4.jpg
 wwwroot\img\bg-img\hero5.jpg
+wwwroot\img\bg-img\Langomez.jpg
 wwwroot\img\bg-img\listing.jpg
+wwwroot\img\bg-img\Patac.png
+wwwroot\img\bg-img\Rodriguez.jpg
 wwwroot\img\bg-img\team1.jpg
 wwwroot\img\bg-img\team2.jpg
 wwwroot\img\bg-img\team3.jpg
