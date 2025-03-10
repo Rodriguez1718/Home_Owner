@@ -29,14 +29,14 @@
         <div class="top-header-area">
             <div class="h-100 d-md-flex justify-content-between align-items-center">
                 <div class="email-address">
-                    <a href="mailto:krisjohn.rodriguez@gmail.com">krisjohn.rodriguez@gmail.com</a>
+                    <a href="mailto:krisjohn.rodriguez@gmail.com">letsgobusinesstogether@gmail.com</a>
                 </div>
                 <div class="phone-number d-flex">
                     <div class="icon">
                         <img src="~/img/icons/phone-call.png" alt="">
                     </div>
                     <div class="number">
-                        <a href="tel:+65 926 936 4245">+65 926 936 4245</a>
+                        <a href="tel:+65 926 936 4245">+65 989 898 8989</a>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@
                                     <li><a asp-controller="Home" asp-action="Listings">Properties</a></li>
                                     <li><a asp-controller="Home" asp-action="Blog">Blog</a></li>
                                     <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
-                                    <li><a asp-page="/Account/Login">Login</a></li>
+                                    <partial name="_LoginPartial" />
                                 </ul>
 
                                 <!-- Search Form -->
@@ -124,8 +124,8 @@
     </header>
     <!-- Header Area End -->
 
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div>
+        <main role="main">
             @RenderBody()
         </main>
     </div>

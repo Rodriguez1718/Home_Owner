@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zamh94BOlSa1V3CKxdYjwsqXC3l3L3pPh1GQ5jTtDd4=",
+  "Hash": "pFynUwAKS6DbzHS9ZQPpLcX9GCTqdjmniwmiQPNiIM8=",
   "Source": "HomeOwner",
   "BasePath": "_content/HomeOwner",
   "Mode": "Default",
@@ -1718,6 +1718,27 @@
       "OriginalItemSpec": "wwwroot\\Content\\themify-icons.css"
     },
     {
+      "Identity": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\account.css",
+      "SourceId": "HomeOwner",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\",
+      "BasePath": "_content/HomeOwner",
+      "RelativePath": "css/account#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hz2s51bkdx",
+      "Integrity": "44i9Sd6btdLQi83evt0IJu9OigEVOuH0gdtsw+VuMSM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\account.css"
+    },
+    {
       "Identity": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\login.css",
       "SourceId": "HomeOwner",
       "SourceType": "Discovered",
@@ -2073,6 +2094,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\themify.woff"
+    },
+    {
+      "Identity": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\images\\hero1.jpg",
+      "SourceId": "HomeOwner",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\",
+      "BasePath": "_content/HomeOwner",
+      "RelativePath": "images/hero1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hjspl12n9i",
+      "Integrity": "Q+ohfyTJ4HGA80IqqrGsOxwJnWsBOcT8n/bx/1kyJL4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\hero1.jpg"
     },
     {
       "Identity": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\about.jpg",
@@ -2556,6 +2598,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\bg-img\\Patac.png"
+    },
+    {
+      "Identity": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\Reyes.jpg",
+      "SourceId": "HomeOwner",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\",
+      "BasePath": "_content/HomeOwner",
+      "RelativePath": "img/bg-img/Reyes#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r4wlwr9zqi",
+      "Integrity": "61GvlFcvP0MVegppO8gkSkOd3FXUfFegWPRzqxZ1X5c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\bg-img\\Reyes.jpg"
     },
     {
       "Identity": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\Rodriguez.jpg",
@@ -6130,6 +6193,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-CKCvnwNRYXK7PY0x7rtkUQ8ee6hIgcnZn5gJoouUN08="
+        }
+      ]
+    },
+    {
+      "Route": "css/account.css",
+      "AssetFile": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\account.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "467"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"44i9Sd6btdLQi83evt0IJu9OigEVOuH0gdtsw+VuMSM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 19:23:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-44i9Sd6btdLQi83evt0IJu9OigEVOuH0gdtsw+VuMSM="
+        }
+      ]
+    },
+    {
+      "Route": "css/account.hz2s51bkdx.css",
+      "AssetFile": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\account.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "467"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"44i9Sd6btdLQi83evt0IJu9OigEVOuH0gdtsw+VuMSM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 19:23:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hz2s51bkdx"
+        },
+        {
+          "Name": "label",
+          "Value": "css/account.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-44i9Sd6btdLQi83evt0IJu9OigEVOuH0gdtsw+VuMSM="
         }
       ]
     },
@@ -9912,6 +10057,88 @@
       ]
     },
     {
+      "Route": "images/hero1.hjspl12n9i.jpg",
+      "AssetFile": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\images\\hero1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "202965"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q+ohfyTJ4HGA80IqqrGsOxwJnWsBOcT8n/bx/1kyJL4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 13:00:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hjspl12n9i"
+        },
+        {
+          "Name": "label",
+          "Value": "images/hero1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q+ohfyTJ4HGA80IqqrGsOxwJnWsBOcT8n/bx/1kyJL4="
+        }
+      ]
+    },
+    {
+      "Route": "images/hero1.jpg",
+      "AssetFile": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\images\\hero1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "202965"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q+ohfyTJ4HGA80IqqrGsOxwJnWsBOcT8n/bx/1kyJL4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 13:00:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q+ohfyTJ4HGA80IqqrGsOxwJnWsBOcT8n/bx/1kyJL4="
+        }
+      ]
+    },
+    {
       "Route": "img/bg-img/about.3rnu3c443r.jpg",
       "AssetFile": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\about.jpg",
       "Selectors": [],
@@ -11794,6 +12021,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-qfSQ0cy17NqXb+MKz9b1+igeITdzOtgb9aA9yTkgtZM="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg-img/Reyes.jpg",
+      "AssetFile": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\Reyes.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "107287"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"61GvlFcvP0MVegppO8gkSkOd3FXUfFegWPRzqxZ1X5c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 20:42:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-61GvlFcvP0MVegppO8gkSkOd3FXUfFegWPRzqxZ1X5c="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg-img/Reyes.r4wlwr9zqi.jpg",
+      "AssetFile": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\Reyes.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "107287"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"61GvlFcvP0MVegppO8gkSkOd3FXUfFegWPRzqxZ1X5c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 20:42:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r4wlwr9zqi"
+        },
+        {
+          "Name": "label",
+          "Value": "img/bg-img/Reyes.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-61GvlFcvP0MVegppO8gkSkOd3FXUfFegWPRzqxZ1X5c="
         }
       ]
     },
