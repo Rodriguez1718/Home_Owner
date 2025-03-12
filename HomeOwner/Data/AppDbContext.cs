@@ -13,5 +13,15 @@ namespace HomeOwner.Data
         protected AppDbContext()
         {
         }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+
+            // Set default value for the Role property in the Users table
+            builder.Entity<Users>()
+                   .Property(u => u.Role)
+                   .HasDefaultValue("HomeOwner");
+        }
     }
 }

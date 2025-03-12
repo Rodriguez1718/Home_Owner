@@ -28,19 +28,37 @@ namespace HomeOwner.Controllers
             if (ModelState.IsValid)
             {
                 var result = await signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
-
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home");
+                    // Get the user by email
+                    var user = await userManager.FindByEmailAsync(model.Email);
+
+                    // Use the custom Role property on the user
+                    if (user.Role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                    {
+                        return RedirectToAction("AdminDashboard", "Admin");
+                    }
+                    else if (user.Role.Equals("Staff", StringComparison.OrdinalIgnoreCase))
+                    {
+                        return RedirectToAction("StaffDashboard", "Staff");
+                    }
+                    else if (user.Role.Equals("HomeOwner", StringComparison.OrdinalIgnoreCase))
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
                 }
                 else
                 {
                     ModelState.AddModelError("", "Email or password is incorrect");
-                    return View(model);
                 }
             }
             return View(model);
         }
+
 
         public IActionResult Register()
         {
@@ -89,7 +107,7 @@ namespace HomeOwner.Controllers
         public async Task<IActionResult> VerifyEmail(VerifyEmailViewModel model)
         {
             if (ModelState.IsValid)
-            { 
+            {
                 var user = await userManager.FindByNameAsync(model.Email);
 
                 if (user == null)
@@ -98,8 +116,8 @@ namespace HomeOwner.Controllers
                     return View(model);
                 }
                 else
-                { 
-                    return RedirectToAction("ChangePassword", "Account", new { username = user.UserName});
+                {
+                    return RedirectToAction("ChangePassword", "Account", new { username = user.UserName });
                 }
             }
             return View(model);
@@ -108,8 +126,8 @@ namespace HomeOwner.Controllers
         public IActionResult ChangePassword(string username)
         {
             if (string.IsNullOrEmpty(username))
-            { 
-                return RedirectToAction("VerifyEmail", "Account"); 
+            {
+                return RedirectToAction("VerifyEmail", "Account");
             }
             return View(new ChangePasswordViewModel { Email = username });
         }
