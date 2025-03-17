@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\css\\account.css"
     },
     {
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\admin.css",
+      "PackagePath": "staticwebassets\\css\\admin.css"
+    },
+    {
       "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },

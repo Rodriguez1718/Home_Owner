@@ -27,5 +27,10 @@ namespace HomeOwner.Controllers
             // The user is admin, so continue to the admin page.
             return View();
         }
+
+        public IActionResult Users()
+        {
+            return View();
+        }
     }
 }

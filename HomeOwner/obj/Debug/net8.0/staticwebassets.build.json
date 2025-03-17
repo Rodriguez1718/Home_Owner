@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pFynUwAKS6DbzHS9ZQPpLcX9GCTqdjmniwmiQPNiIM8=",
+  "Hash": "EDpwU4zkU+ECe558O7Li11U9HtQyTEs/kt8O5l4dn5o=",
   "Source": "HomeOwner",
   "BasePath": "_content/HomeOwner",
   "Mode": "Default",
@@ -1737,6 +1737,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\account.css"
+    },
+    {
+      "Identity": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\admin.css",
+      "SourceId": "HomeOwner",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\",
+      "BasePath": "_content/HomeOwner",
+      "RelativePath": "css/admin#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9b80pc8kk1",
+      "Integrity": "6+wxHXFtcxrou9I0baziHL4ikdZoKOoP/+GvdrF1CC4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\admin.css"
     },
     {
       "Identity": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\login.css",
@@ -6275,6 +6296,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-44i9Sd6btdLQi83evt0IJu9OigEVOuH0gdtsw+VuMSM="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.9b80pc8kk1.css",
+      "AssetFile": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "463"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6+wxHXFtcxrou9I0baziHL4ikdZoKOoP/+GvdrF1CC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 05:45:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9b80pc8kk1"
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6+wxHXFtcxrou9I0baziHL4ikdZoKOoP/+GvdrF1CC4="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.css",
+      "AssetFile": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "463"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6+wxHXFtcxrou9I0baziHL4ikdZoKOoP/+GvdrF1CC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 05:45:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6+wxHXFtcxrou9I0baziHL4ikdZoKOoP/+GvdrF1CC4="
         }
       ]
     },

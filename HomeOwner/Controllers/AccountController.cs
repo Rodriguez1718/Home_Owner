@@ -75,6 +75,7 @@ namespace HomeOwner.Controllers
                     FullName = model.Name,
                     Email = model.Email,
                     UserName = model.Email,
+                    Role = "HomeOwner"
                 };
 
 
@@ -174,5 +175,11 @@ namespace HomeOwner.Controllers
             await signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
+
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
+
     }
 }

@@ -5,16 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewBag.Title</title>
     <!-- CSS Files -->
-    <link rel="stylesheet" href="~/css/account.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
     <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-
-
-    <div>
-        @RenderBody()
+    <div class="sidebar">
+        <a asp-controller="Admin" asp-action="AdminDashboard">Dashboard</a>
+        <a href="#">User Management</a>
+        <a href="#">Announcements</a>
+        <a asp-controller="Billing" asp-action="Billing">Billing</a>
+        <a href="#">Facility Reservation</a>
+        <a href="#">Service Requests</a>
+        <a href="#">Document Management</a>
+        <a href="#">Community Forum</a>
+        <a href="#">Security Features</a>
+        <a href="#">Event Calendar</a>
+        <a href="#">Feedback</a>
+        <a href="#">Contact Directory</a>
+        <a href="#">Reports</a>
+        <a href="#">Logout</a>
     </div>
 
+    <div class="content">
+        @RenderBody()
+    </div>
 
     <!-- Scripts -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

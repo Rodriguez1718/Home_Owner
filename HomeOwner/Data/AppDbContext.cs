@@ -6,11 +6,7 @@ namespace HomeOwner.Data
 {
     public class AppDbContext : IdentityDbContext<Users>
     {
-        public AppDbContext(DbContextOptions options) : base(options)
-        {
-        }
-
-        protected AppDbContext()
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
 
@@ -23,5 +19,9 @@ namespace HomeOwner.Data
                    .Property(u => u.Role)
                    .HasDefaultValue("HomeOwner");
         }
+
+        public DbSet<Billing> Billings { get; set; }
+        public DbSet<Payment> Payments { get; set; }
     }
 }
+

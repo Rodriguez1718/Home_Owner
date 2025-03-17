@@ -7,5 +7,8 @@ namespace HomeOwner.Models
         public string FullName { get; set; }
 
         public string Role { get; set; } = "HomeOwner";
+
+        public string Payment { get; set; }
+        public string Billing { get; set; }
     }
 }
