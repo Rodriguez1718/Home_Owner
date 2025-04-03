@@ -12,6 +12,7 @@
 
 	<ItemGroup>
 		<Folder Include="Migrations\" />
+		<Folder Include="Views\Billing\" />
 		<Folder Include="wwwroot\Content\scss\" />
 		<Folder Include="wwwroot\images\" />
 	</ItemGroup>

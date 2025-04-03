@@ -21,6 +21,7 @@ wwwroot\css\account.css
 wwwroot\css\admin.css
 wwwroot\css\login.css
 wwwroot\css\site.css
+wwwroot\css\staff.css
 wwwroot\favicon.ico
 wwwroot\fonts\classy.eot
 wwwroot\fonts\classy.svg

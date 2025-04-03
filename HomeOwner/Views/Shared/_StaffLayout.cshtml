@@ -1,20 +1,95 @@
-﻿<!DOCTYPE html>
+﻿@model IEnumerable<HomeOwner.Models.Announcement>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewBag.Title</title>
+    <title>@ViewBag.Title - Your Website Name</title>
     <!-- CSS Files -->
-    <link rel="stylesheet" href="~/css/account.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/staff.css" asp-append-version="true" />
     <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
 
+    <!-- Sidebar and Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar Navigation -->
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="sidebar-sticky d-flex flex-column pt-3">
+                    <ul class="nav flex-column flex-grow-1">
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="@Url.Action("StaffDashboard", "Staff")">South</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="@Url.Action("Index", "UserManagement")">
+                                User Management
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index", "Announcements")">
+                                Announcements &amp; Notifications
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index", "Billing")">
+                                Billing &amp; Payment Portal
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index", "Reservations")">
+                                Facility Reservation
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index", "ServiceRequests")">
+                                Service Request Management
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index", "Documents")">
+                                Document Management
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index", "Events")">
+                                Event Calendar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index", "Feedback")">
+                                Feedback &amp; Complaints
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index", "Reports")">
+                                Reports &amp; Analytics
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mt-auto">
+                        <partial name="_LoginPartial" />
+                    </div>
+                </div>
+            </nav>
 
-    <div>
-        @RenderBody()
+            <!-- Main Content Area -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 main-content">
+                @RenderBody()
+                <div>
+                    @await Html.PartialAsync("AnnouncementsPartial", Model)
+                </div>
+            </main>
+        </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">&copy; @DateTime.Now.Year - South. All rights reserved.</span>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -23,3 +98,5 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+

@@ -2,19 +2,21 @@
 using Microsoft.AspNetCore.Identity;
 using HomeOwner.ViewModels;
 using HomeOwner.Models;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Threading.Tasks;
 
 namespace HomeOwner.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly SignInManager<Users> signInManager;
-        private readonly UserManager<Users> userManager;
+        private readonly SignInManager<Users> _signInManager;
+        private readonly UserManager<Users> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-        public AccountController(SignInManager<Users> signInManager, UserManager<Users> userManager)
+        public AccountController(SignInManager<Users> signInManager, UserManager<Users> userManager, RoleManager<IdentityRole> roleManager)
         {
-            this.signInManager = signInManager;
-            this.userManager = userManager;
+            _signInManager = signInManager;
+            _userManager = userManager;
+            _roleManager = roleManager;
         }
 
         public IActionResult Login()
@@ -27,22 +29,21 @@ namespace HomeOwner.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = await signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
+                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
                 if (result.Succeeded)
                 {
-                    // Get the user by email
-                    var user = await userManager.FindByEmailAsync(model.Email);
+                    var user = await _userManager.FindByEmailAsync(model.Email);
+                    var roles = await _userManager.GetRolesAsync(user);
 
-                    // Use the custom Role property on the user
-                    if (user.Role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                    if (roles.Contains("Admin"))
                     {
                         return RedirectToAction("AdminDashboard", "Admin");
                     }
-                    else if (user.Role.Equals("Staff", StringComparison.OrdinalIgnoreCase))
+                    else if (roles.Contains("Staff"))
                     {
                         return RedirectToAction("StaffDashboard", "Staff");
                     }
-                    else if (user.Role.Equals("HomeOwner", StringComparison.OrdinalIgnoreCase))
+                    else if (roles.Contains("HomeOwner"))
                     {
                         return RedirectToAction("Index", "Home");
                     }
@@ -51,14 +52,10 @@ namespace HomeOwner.Controllers
                         return RedirectToAction("Index", "Home");
                     }
                 }
-                else
-                {
-                    ModelState.AddModelError("", "Email or password is incorrect");
-                }
+                ModelState.AddModelError("", "Email or password is incorrect");
             }
             return View(model);
         }
-
 
         public IActionResult Register()
         {
@@ -70,31 +67,32 @@ namespace HomeOwner.Controllers
         {
             if (ModelState.IsValid)
             {
-                Users users = new Users
+                var user = new Users
                 {
                     FullName = model.Name,
                     Email = model.Email,
-                    UserName = model.Email,
-                    Role = "HomeOwner"
+                    UserName = model.Email
                 };
 
-
-                var result = await userManager.CreateAsync(users, model.Password);
+                var result = await _userManager.CreateAsync(user, model.Password);
 
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Login", "Account");
-                }
-                else
-                {
-                    foreach (var error in result.Errors)
+                    // Ensure the HomeOwner role exists
+                    if (!await _roleManager.RoleExistsAsync("HomeOwner"))
                     {
-                        ModelState.AddModelError("", error.Description);
+                        await _roleManager.CreateAsync(new IdentityRole("HomeOwner"));
                     }
 
-                    return View(model);
-                }
+                    // Assign the user to the HomeOwner role
+                    await _userManager.AddToRoleAsync(user, "HomeOwner");
 
+                    return RedirectToAction("Login", "Account");
+                }
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
             }
             return View(model);
         }
@@ -109,17 +107,13 @@ namespace HomeOwner.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = await userManager.FindByNameAsync(model.Email);
-
+                var user = await _userManager.FindByNameAsync(model.Email);
                 if (user == null)
                 {
                     ModelState.AddModelError("", "Email is not registered.");
                     return View(model);
                 }
-                else
-                {
-                    return RedirectToAction("ChangePassword", "Account", new { username = user.UserName });
-                }
+                return RedirectToAction("ChangePassword", "Account", new { username = user.UserName });
             }
             return View(model);
         }
@@ -138,41 +132,38 @@ namespace HomeOwner.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = await userManager.FindByNameAsync(model.Email);
+                var user = await _userManager.FindByNameAsync(model.Email);
                 if (user != null)
                 {
-                    var result = await userManager.RemovePasswordAsync(user);
+                    var result = await _userManager.RemovePasswordAsync(user);
                     if (result.Succeeded)
                     {
-                        result = await userManager.AddPasswordAsync(user, model.NewPassword);
-                        return RedirectToAction("Login", "Account");
-                    }
-                    else
-                    {
-                        foreach (var error in result.Errors)
+                        result = await _userManager.AddPasswordAsync(user, model.NewPassword);
+                        if (result.Succeeded)
                         {
-                            ModelState.AddModelError("", error.Description);
+                            return RedirectToAction("Login", "Account");
                         }
-
-                        return View(model);
+                    }
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
                     }
                 }
                 else
                 {
                     ModelState.AddModelError("", "Email not found!");
-                    return View(model);
                 }
             }
             else
             {
                 ModelState.AddModelError("", "Something went wrong. Try again.");
-                return View(model);
             }
+            return View(model);
         }
 
         public async Task<IActionResult> Logout()
         {
-            await signInManager.SignOutAsync();
+            await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
 
@@ -180,6 +171,5 @@ namespace HomeOwner.Controllers
         {
             return View();
         }
-
     }
 }

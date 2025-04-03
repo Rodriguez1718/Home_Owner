@@ -1,0 +1,14 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model HomeOwner.Models.Announcement
+
+<h2>Announcement Details</h2>
+
+<div>
+    <h3>@Model.Title</h3>
+    <p>@Model.Content</p>
+    <p><small>@Model.CreatedAt.ToString("MMMM dd, yyyy")</small></p>
+</div>
+

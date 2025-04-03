@@ -11,19 +11,19 @@
 <body>
     <div class="sidebar">
         <a asp-controller="Admin" asp-action="AdminDashboard">Dashboard</a>
-        <a href="#">User Management</a>
-        <a href="#">Announcements</a>
+        <a asp-controller="UserManagement" asp-action="Index">User Management</a>
+        <a asp-controller="Announcements" asp-action="Index">Announcements</a>
         <a asp-controller="Billing" asp-action="Billing">Billing</a>
-        <a href="#">Facility Reservation</a>
-        <a href="#">Service Requests</a>
-        <a href="#">Document Management</a>
-        <a href="#">Community Forum</a>
-        <a href="#">Security Features</a>
-        <a href="#">Event Calendar</a>
-        <a href="#">Feedback</a>
-        <a href="#">Contact Directory</a>
-        <a href="#">Reports</a>
-        <a href="#">Logout</a>
+        <a asp-controller="Reservations" asp-action="Index">Facility Reservation</a>
+        <a asp-controller="ServiceRequests" asp-action="Index">Service Requests</a>
+        <a asp-controller="Documents" asp-action="Index">Document Management</a>
+        <a asp-controller="CommunityForum" asp-action="Index">Community Forum</a>
+        <a asp-controller="SecurityFeatures" asp-action="Index">Security Features</a>
+        <a asp-controller="Events" asp-action="Index">Event Calendar</a>
+        <a asp-controller="Feedback" asp-action="Index">Feedback</a>
+        <a asp-controller="ContactDirectory" asp-action="Index">Contact Directory</a>
+        <a asp-controller="Reports" asp-action="Index">Reports</a>
+        <partial name="_LoginPartial" />
     </div>
 
     <div class="content">

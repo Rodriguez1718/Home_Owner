@@ -10,6 +10,8 @@ namespace HomeOwner.Data
         {
         }
 
+        public DbSet<Announcement> Announcements { get; set; } // Add this line
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -19,9 +21,5 @@ namespace HomeOwner.Data
                    .Property(u => u.Role)
                    .HasDefaultValue("HomeOwner");
         }
-
-        public DbSet<Billing> Billings { get; set; }
-        public DbSet<Payment> Payments { get; set; }
     }
 }
-

@@ -1,0 +1,16 @@
+﻿@model IEnumerable<HomeOwner.Models.Announcement>
+
+<div class="announcements">
+    <h2>Announcements</h2>
+    <ul>
+        @foreach (var announcement in Model)
+        {
+            <li>
+                <h3>@announcement.Title</h3>
+                <p>@announcement.Content</p>
+                <p><small>@announcement.CreatedAt.ToString("MMMM dd, yyyy")</small></p>
+            </li>
+        }
+    </ul>
+</div>
+
