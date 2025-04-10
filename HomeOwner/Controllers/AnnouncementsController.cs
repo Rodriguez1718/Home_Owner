@@ -79,9 +79,6 @@ namespace HomeOwner.Controllers
             return View(announcement);
         }
 
-
-
-
         // GET: Announcements/Edit/5 (Only Admins)
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
@@ -148,15 +145,14 @@ namespace HomeOwner.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // Method to fetch announcements for the layout
+        // Method to fetch announcements for the layout (HomeController can call this)
         public async Task<IActionResult> AnnouncementsPartial()
         {
             var announcements = await _context.Announcements
                 .OrderByDescending(a => a.CreatedAt)
+                .Take(5) // Limit to 5 recent announcements for the home page
                 .ToListAsync();
             return PartialView("_AnnouncementsPartial", announcements);
         }
-
-
     }
 }

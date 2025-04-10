@@ -19,6 +19,7 @@ wwwroot\Content\style.css.map
 wwwroot\Content\themify-icons.css
 wwwroot\css\account.css
 wwwroot\css\admin.css
+wwwroot\css\Announcements.css
 wwwroot\css\login.css
 wwwroot\css\site.css
 wwwroot\css\staff.css

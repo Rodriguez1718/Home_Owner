@@ -3863,6 +3863,88 @@
       ]
     },
     {
+      "Route": "css/Announcements.css",
+      "AssetFile": "css/Announcements.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 17:49:01 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00="
+        }
+      ]
+    },
+    {
+      "Route": "css/Announcements.vfdlnp86vv.css",
+      "AssetFile": "css/Announcements.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 17:49:01 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vfdlnp86vv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00="
+        },
+        {
+          "Name": "label",
+          "Value": "css/Announcements.css"
+        }
+      ]
+    },
+    {
       "Route": "css/account.css",
       "AssetFile": "css/account.css",
       "Selectors": [],

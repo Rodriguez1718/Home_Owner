@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yKPRFH6Ny/YYL6cMZU8Bv58oS4bq2yl3PHIQAtJF+IE=",
+  "Hash": "yacwFJwzO5sRmtWGLAmnn5qcoB1TVpqC4nQkVxc4nU4=",
   "Source": "HomeOwner",
   "BasePath": "_content/HomeOwner",
   "Mode": "Default",
@@ -1758,6 +1758,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\admin.css"
+    },
+    {
+      "Identity": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\Announcements.css",
+      "SourceId": "HomeOwner",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\",
+      "BasePath": "_content/HomeOwner",
+      "RelativePath": "css/Announcements#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vfdlnp86vv",
+      "Integrity": "tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Announcements.css"
     },
     {
       "Identity": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\login.css",
@@ -6399,6 +6420,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-6+wxHXFtcxrou9I0baziHL4ikdZoKOoP/+GvdrF1CC4="
+        }
+      ]
+    },
+    {
+      "Route": "css/Announcements.css",
+      "AssetFile": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\Announcements.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 17:49:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00="
+        }
+      ]
+    },
+    {
+      "Route": "css/Announcements.vfdlnp86vv.css",
+      "AssetFile": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\Announcements.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 17:49:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vfdlnp86vv"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Announcements.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00="
         }
       ]
     },
