@@ -46,40 +46,40 @@ namespace HomeOwner.Controllers
             return View();
         }
 
-        // POST: Announcements/Create
         [HttpPost]
         [Authorize(Roles = "Admin")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Title,Content")] Announcement announcement)
+        public async Task<IActionResult> Create(Announcement announcement)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
+                    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier)
+                                  ?? throw new InvalidOperationException("User ID cannot be null.");
+
                     announcement.CreatedAt = DateTime.Now;
-                    announcement.AdminId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Get admin ID
+                    announcement.AdminId = userId;
+
                     _context.Add(announcement);
                     await _context.SaveChangesAsync();
-
-                    // Log success message
-                    Console.WriteLine("Announcement created successfully!");
 
                     return RedirectToAction(nameof(Index));
                 }
                 catch (Exception ex)
                 {
-                    // Log error message if something goes wrong
                     Console.WriteLine($"Error creating announcement: {ex.Message}");
                 }
             }
             else
             {
-                // Log validation errors
-                Console.WriteLine("Announcement creation failed. Model state is invalid.");
+                Console.WriteLine("ModelState is invalid");
             }
 
             return View(announcement);
         }
+
+
 
 
         // GET: Announcements/Edit/5 (Only Admins)
