@@ -5,7 +5,7 @@
 namespace HomeOwner.Migrations
 {
     /// <inheritdoc />
-    public partial class SetDefaultRoleValue : Migration
+    public partial class DeletedWrongRole : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,9 +15,9 @@ namespace HomeOwner.Migrations
                 table: "AspNetUsers",
                 type: "nvarchar(max)",
                 nullable: false,
-                defaultValue: "HomeOwner",
                 oldClrType: typeof(string),
-                oldType: "nvarchar(max)");
+                oldType: "nvarchar(max)",
+                oldDefaultValue: "HomeOwner");
         }
 
         /// <inheritdoc />
@@ -28,9 +28,9 @@ namespace HomeOwner.Migrations
                 table: "AspNetUsers",
                 type: "nvarchar(max)",
                 nullable: false,
+                defaultValue: "HomeOwner",
                 oldClrType: typeof(string),
-                oldType: "nvarchar(max)",
-                oldDefaultValue: "HomeOwner");
+                oldType: "nvarchar(max)");
         }
     }
 }

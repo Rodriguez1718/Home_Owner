@@ -54,14 +54,33 @@ namespace HomeOwner.Controllers
         {
             if (ModelState.IsValid)
             {
-                announcement.CreatedAt = DateTime.Now;
-                announcement.AdminId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Get admin ID
-                _context.Add(announcement);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    announcement.CreatedAt = DateTime.Now;
+                    announcement.AdminId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Get admin ID
+                    _context.Add(announcement);
+                    await _context.SaveChangesAsync();
+
+                    // Log success message
+                    Console.WriteLine("Announcement created successfully!");
+
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    // Log error message if something goes wrong
+                    Console.WriteLine($"Error creating announcement: {ex.Message}");
+                }
             }
+            else
+            {
+                // Log validation errors
+                Console.WriteLine("Announcement creation failed. Model state is invalid.");
+            }
+
             return View(announcement);
         }
+
 
         // GET: Announcements/Edit/5 (Only Admins)
         [Authorize(Roles = "Admin")]
@@ -137,5 +156,7 @@ namespace HomeOwner.Controllers
                 .ToListAsync();
             return PartialView("_AnnouncementsPartial", announcements);
         }
+
+
     }
 }

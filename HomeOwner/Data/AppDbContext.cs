@@ -16,10 +16,6 @@ namespace HomeOwner.Data
         {
             base.OnModelCreating(builder);
 
-            // Set default value for the Role property in the Users table
-            builder.Entity<Users>()
-                   .Property(u => u.Role)
-                   .HasDefaultValue("HomeOwner");
         }
     }
 }
