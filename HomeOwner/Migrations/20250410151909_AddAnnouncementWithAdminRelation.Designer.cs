@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HomeOwner.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250403181651_DeletedWrongRole")]
-    partial class DeletedWrongRole
+    [Migration("20250410151909_AddAnnouncementWithAdminRelation")]
+    partial class AddAnnouncementWithAdminRelation
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -100,10 +100,6 @@ namespace HomeOwner.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
-
-                    b.Property<string>("Role")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
@@ -264,9 +260,9 @@ namespace HomeOwner.Migrations
             modelBuilder.Entity("HomeOwner.Models.Announcement", b =>
                 {
                     b.HasOne("HomeOwner.Models.Users", "Admin")
-                        .WithMany()
+                        .WithMany("Announcements")
                         .HasForeignKey("AdminId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Admin");
@@ -321,6 +317,11 @@ namespace HomeOwner.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("HomeOwner.Models.Users", b =>
+                {
+                    b.Navigation("Announcements");
                 });
 #pragma warning restore 612, 618
         }

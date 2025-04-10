@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using System.Collections.Generic;
 
 namespace HomeOwner.Models
 {
@@ -6,7 +7,7 @@ namespace HomeOwner.Models
     {
         public string? FullName { get; set; }
 
-
-
+        // Navigation property for announcements created by the user  
+        public virtual ICollection<Announcement> Announcements { get; set; } = new List<Announcement>();
     }
 }

@@ -147,4 +147,3 @@ C:\Users\Kris John\source\repos\HomeOwner\HomeOwner\obj\Debug\net8.0\refint\Home
 C:\Users\Kris John\source\repos\HomeOwner\HomeOwner\obj\Debug\net8.0\HomeOwner.pdb
 C:\Users\Kris John\source\repos\HomeOwner\HomeOwner\obj\Debug\net8.0\HomeOwner.genruntimeconfig.cache
 C:\Users\Kris John\source\repos\HomeOwner\HomeOwner\obj\Debug\net8.0\ref\HomeOwner.dll
-C:\Users\Kris John\source\repos\HomeOwner\HomeOwner\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

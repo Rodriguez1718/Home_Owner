@@ -16,6 +16,12 @@ namespace HomeOwner.Data
         {
             base.OnModelCreating(builder);
 
+            builder.Entity<Announcement>()
+                .HasOne(a => a.Admin)
+                .WithMany(u => u.Announcements) // if you add the collection in Users.cs
+                .HasForeignKey(a => a.AdminId)
+                .OnDelete(DeleteBehavior.Restrict);
+
         }
     }
 }
