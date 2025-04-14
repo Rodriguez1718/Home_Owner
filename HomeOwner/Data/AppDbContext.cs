@@ -12,6 +12,8 @@ namespace HomeOwner.Data
 
         public DbSet<Announcement> Announcements { get; set; } // Add this line
 
+        public DbSet<ServiceRequest> ServiceRequests { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

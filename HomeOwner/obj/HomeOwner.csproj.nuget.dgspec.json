@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\HomeOwner.csproj": {}
+    "C:\\Users\\PC\\source\\repos\\Home_Owner\\HomeOwner\\HomeOwner\\HomeOwner.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\HomeOwner.csproj": {
+    "C:\\Users\\PC\\source\\repos\\Home_Owner\\HomeOwner\\HomeOwner\\HomeOwner.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\HomeOwner.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\Home_Owner\\HomeOwner\\HomeOwner\\HomeOwner.csproj",
         "projectName": "HomeOwner",
-        "projectPath": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\HomeOwner.csproj",
-        "packagesPath": "C:\\Users\\Kris John\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\obj\\",
+        "projectPath": "C:\\Users\\PC\\source\\repos\\Home_Owner\\HomeOwner\\HomeOwner\\HomeOwner.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\source\\repos\\Home_Owner\\HomeOwner\\HomeOwner\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kris John\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -92,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

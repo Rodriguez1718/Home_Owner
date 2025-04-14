@@ -1,0 +1,33 @@
+﻿@model IEnumerable<HomeOwner.Models.ServiceRequest>
+
+@{
+    ViewData["Title"] = "Service Requests";
+}
+
+<h1>Service Requests</h1>
+
+<p>
+    <a asp-action="Create">Create New Request</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Request Type</th>
+            <th>Description</th>
+            <th>Date Submitted</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.RequestType</td>
+                <td>@item.Description</td>
+                <td>@item.DateSubmitted.ToShortDateString()</td>
+                <td>@item.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>

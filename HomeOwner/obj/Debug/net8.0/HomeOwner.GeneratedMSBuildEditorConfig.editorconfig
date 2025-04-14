@@ -9,129 +9,137 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HomeOwner
 build_property.RootNamespace = HomeOwner
-build_property.ProjectDir = C:\Users\Kris John\source\repos\HomeOwner\HomeOwner\
+build_property.ProjectDir = C:\Users\PC\source\repos\Home_Owner\HomeOwner\HomeOwner\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Kris John\source\repos\HomeOwner\HomeOwner
+build_property.MSBuildProjectDirectory = C:\Users\PC\source\repos\Home_Owner\HomeOwner\HomeOwner
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Account/AccessDenied.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Account/ChangePassword.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Account/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Account/Login.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Account/Register.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Account/VerifyEmail.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Account/VerifyEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxWZXJpZnlFbWFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Admin/AdminDashboard.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Admin/AdminDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5EYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Announcements/Create.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Announcements/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub3VuY2VtZW50c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Announcements/Delete.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Announcements/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub3VuY2VtZW50c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Announcements/Details.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Announcements/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub3VuY2VtZW50c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Announcements/Edit.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Announcements/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub3VuY2VtZW50c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Announcements/Index.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Announcements/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub3VuY2VtZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Home/About.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Home/Announcements.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Home/Announcements.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbm5vdW5jZW1lbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Home/Blog.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Home/Blog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCbG9nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Home/Contact.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Home/Index.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Home/Listings.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Home/Listings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXN0aW5ncy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Home/Privacy.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Shared/AnnouncementsPartial.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Service Request/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZSBSZXF1ZXN0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Service Request/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZSBSZXF1ZXN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Shared/AnnouncementsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFubm91bmNlbWVudHNQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Shared/Error.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Shared/_AccountLayout.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Shared/_AccountLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BY2NvdW50TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Shared/_AdminLayout.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Shared/_StaffLayout.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Shared/_StaffLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdGFmZkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Staff/StaffDashboard.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Staff/StaffDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcU3RhZmZEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/_ViewImports.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/_ViewStart.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Shared/_Layout.cshtml]
+[C:/Users/PC/source/repos/Home_Owner/HomeOwner/HomeOwner/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5p1pisy8rd
