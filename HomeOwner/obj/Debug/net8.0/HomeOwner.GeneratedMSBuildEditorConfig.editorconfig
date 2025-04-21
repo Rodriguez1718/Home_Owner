@@ -40,6 +40,30 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxWZXJpZnlFbWFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/AdminUsers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Vc2Vyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/AdminUsers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Vc2Vyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/AdminUsers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Vc2Vyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/AdminUsers/EditRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Vc2Vyc1xFZGl0Um9sZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/AdminUsers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Vc2Vyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/AdminUsers/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Vc2Vyc1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Admin/AdminDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5EYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

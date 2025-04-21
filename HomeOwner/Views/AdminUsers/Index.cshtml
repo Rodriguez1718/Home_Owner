@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Users>
+
+<h2>User Management</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Roles</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>
+                    @* Later: show roles here *@
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@user.Id">Edit</a> |
+                    <a asp-action="EditRoles" asp-route-id="@user.Id">Roles</a> |
+                    <a asp-action="Delete" asp-route-id="@user.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
