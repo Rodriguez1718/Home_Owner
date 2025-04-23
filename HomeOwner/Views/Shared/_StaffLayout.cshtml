@@ -1,5 +1,4 @@
-﻿@model IEnumerable<HomeOwner.Models.Announcement>
-
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,19 +22,7 @@
                             <a class="navbar-brand" href="@Url.Action("StaffDashboard", "Staff")">South</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="@Url.Action("Index", "UserManagement")">
-                                User Management
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "Announcements")">
-                                Announcements &amp; Notifications
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "Billing")">
-                                Billing &amp; Payment Portal
-                            </a>
+                            <a asp-controller="Staff" asp-action="Announcements">Announcements</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="@Url.Action("Index", "Reservations")">
@@ -48,8 +35,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "Documents")">
-                                Document Management
+                            <a class="nav-link" href="@Url.Action("Index", "Contact")">
+                                Contact Directory
                             </a>
                         </li>
                         <li class="nav-item">
@@ -62,11 +49,6 @@
                                 Feedback &amp; Complaints
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "Reports")">
-                                Reports &amp; Analytics
-                            </a>
-                        </li>
                     </ul>
                     <div class="mt-auto">
                         <partial name="_LoginPartial" />
@@ -77,9 +59,6 @@
             <!-- Main Content Area -->
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 main-content">
                 @RenderBody()
-                <div>
-                    @await Html.PartialAsync("AnnouncementsPartial", Model)
-                </div>
             </main>
         </div>
     </div>

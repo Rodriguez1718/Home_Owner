@@ -1,5 +1,21 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model EditUserViewModel
+
 @{
+    ViewBag.Title = "Delete User";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+
+<h2>Confirm Delete</h2>
+
+<p>Are you sure you want to delete the following user?</p>
+
+<ul>
+    <li><strong>Name:</strong> @Model.FullName</li>
+    <li><strong>Email:</strong> @Model.Email</li>
+    <li><strong>Roles:</strong> @(string.Join(", ", Model.Roles))</li>
+</ul>
+
+<form asp-action="Delete" asp-route-id="@Model.Id" method="post">
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

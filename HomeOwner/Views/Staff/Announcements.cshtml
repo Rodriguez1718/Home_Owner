@@ -1,0 +1,8 @@
+﻿@{
+    ViewBag.Title = "Announcements";
+    Layout = "~/Views/Shared/_StaffLayout.cshtml";
+}
+
+@model IEnumerable<HomeOwner.Models.Announcement>
+
+@await Html.PartialAsync("AnnouncementsPartial", Model)
