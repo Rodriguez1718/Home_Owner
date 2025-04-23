@@ -1,6 +1,8 @@
 ﻿using HomeOwner.Models;
+using HomeOwner.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 public class AdminUsersController : Controller
 {
@@ -13,11 +15,45 @@ public class AdminUsersController : Controller
         _roleManager = roleManager;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index(string searchString, int page = 1, int pageSize = 5)
     {
-        var users = _userManager.Users.ToList();
-        return View(users);
+        var usersQuery = _userManager.Users.AsQueryable();
+
+        // Apply search filter
+        if (!string.IsNullOrEmpty(searchString))
+        {
+            usersQuery = usersQuery.Where(u =>
+                u.UserName.Contains(searchString) ||
+                u.Email.Contains(searchString));
+        }
+
+        // Count total users for pagination
+        int totalUsers = await usersQuery.CountAsync();
+        int totalPages = (int)Math.Ceiling((double)totalUsers / pageSize);
+
+        // Paginate users
+        var paginatedUsers = await usersQuery
+            .Skip((page - 1) * pageSize)
+            .Take(pageSize)
+            .ToListAsync();
+
+        // Get roles
+        var userRolesList = new List<(Users User, List<string> Roles)>();
+        foreach (var user in paginatedUsers)
+        {
+            var roles = await _userManager.GetRolesAsync(user);
+            userRolesList.Add((user, roles.ToList()));
+        }
+
+        // Pass view data for search + pagination
+        ViewBag.CurrentFilter = searchString;
+        ViewBag.CurrentPage = page;
+        ViewBag.TotalPages = totalPages;
+
+        return View(userRolesList);
     }
+
+
 
     public async Task<IActionResult> EditRoles(string id)
     {
@@ -47,26 +83,39 @@ public class AdminUsersController : Controller
     [HttpGet]
     public async Task<IActionResult> Create()
     {
-        ViewBag.Roles = _roleManager.Roles.Select(r => r.Name).ToList();
-        return View();
+        var model = new AdminCreateUserViewModel
+        {
+            AllRoles = _roleManager.Roles.Select(r => r.Name).ToList()
+        };
+
+        return View(model);
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(string userName, string email, string password, List<string> selectedRoles)
+    public async Task<IActionResult> Create(AdminCreateUserViewModel model)
     {
+        if (!ModelState.IsValid)
+        {
+            model.AllRoles = _roleManager.Roles.Select(r => r.Name).ToList();
+            return View(model);
+        }
+
         var newUser = new Users
         {
-            UserName = userName,
-            Email = email
+            FullName = model.Name,
+            UserName = model.Email,
+            Email = model.Email
         };
 
-        var result = await _userManager.CreateAsync(newUser, password);
+        var result = await _userManager.CreateAsync(newUser, model.Password);
+
         if (result.Succeeded)
         {
-            if (selectedRoles != null && selectedRoles.Any())
+            if (model.SelectedRoles != null && model.SelectedRoles.Any())
             {
-                await _userManager.AddToRolesAsync(newUser, selectedRoles);
+                await _userManager.AddToRolesAsync(newUser, model.SelectedRoles);
             }
+
             return RedirectToAction("Index");
         }
 
@@ -75,54 +124,71 @@ public class AdminUsersController : Controller
             ModelState.AddModelError(string.Empty, error.Description);
         }
 
-        ViewBag.Roles = _roleManager.Roles.Select(r => r.Name).ToList();
-        return View();
+        model.AllRoles = _roleManager.Roles.Select(r => r.Name).ToList();
+        return View(model);
     }
+
+
 
     // GET: AdminUsers/Edit/id
     public async Task<IActionResult> Edit(string id)
     {
-        if (id == null)
+        var user = await _userManager.FindByIdAsync(id);
+        if (user == null) return NotFound();
+
+        var userRoles = await _userManager.GetRolesAsync(user);
+        var allRoles = _roleManager.Roles.Select(r => r.Name).ToList();
+
+        var model = new EditUserViewModel
+        {
+            Id = user.Id,
+            FullName = user.FullName,
+            Email = user.Email,
+            Roles = userRoles.ToList(),
+            AllRoles = allRoles
+        };
+
+        return View(model);
+    }
+
+    // POST: AdminUsers/Edit/id
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Edit(string id, EditUserViewModel model)
+    {
+        if (id != model.Id)
             return NotFound();
 
         var user = await _userManager.FindByIdAsync(id);
         if (user == null)
             return NotFound();
 
-        return View(user);
-    }
-
-    // POST: AdminUsers/Edit/id
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(string id, Users updatedUser)
-    {
-        if (id != updatedUser.Id)
-            return NotFound();
-
         if (ModelState.IsValid)
         {
-            var user = await _userManager.FindByIdAsync(id);
-            if (user == null)
-                return NotFound();
-
-            user.UserName = updatedUser.UserName;
-            user.Email = updatedUser.Email;
-            // Add other fields if necessary
+            user.UserName = model.FullName;
+            user.Email = model.Email;
 
             var result = await _userManager.UpdateAsync(user);
-            if (result.Succeeded)
+            if (!result.Succeeded)
             {
-                return RedirectToAction(nameof(Index));
+                foreach (var error in result.Errors)
+                    ModelState.AddModelError("", error.Description);
+                return View(model);
             }
 
-            foreach (var error in result.Errors)
-            {
-                ModelState.AddModelError("", error.Description);
-            }
+            var userRoles = await _userManager.GetRolesAsync(user);
+            var rolesToAdd = model.Roles.Except(userRoles);
+            var rolesToRemove = userRoles.Except(model.Roles);
+
+            await _userManager.RemoveFromRolesAsync(user, rolesToRemove);
+            await _userManager.AddToRolesAsync(user, rolesToAdd);
+
+            return RedirectToAction(nameof(Index));
         }
 
-        return View(updatedUser);
+        // In case of error
+        model.AllRoles = _roleManager.Roles.Select(r => r.Name).ToList();
+        return View(model);
     }
 }
 

@@ -1,45 +1,53 @@
-﻿@{
+﻿@model HomeOwner.ViewModels.AdminCreateUserViewModel
+
+@{
     ViewData["Title"] = "Create User";
-    var roles = ViewBag.Roles as List<string>;
 }
 
 <h2>Create User</h2>
 
 <form asp-action="Create" method="post">
-    <div>
-        <label>Username</label>
-        <input type="text" name="userName" class="form-control" required />
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
     </div>
-    <div>
-        <label>Email</label>
-        <input type="email" name="email" class="form-control" required />
+
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
     </div>
-    <div>
-        <label>Password</label>
-        <input type="password" name="password" class="form-control" required />
+
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
     </div>
-    <div>
+
+    <div class="form-group">
+        <label asp-for="ConfirmPassword"></label>
+        <input asp-for="ConfirmPassword" class="form-control" />
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
         <label>Roles</label><br />
-        @foreach (var role in roles)
+        @foreach (var role in Model.AllRoles)
         {
-            <label>
-                <input type="checkbox" name="selectedRoles" value="@role" />
+            <label class="mr-2">
+                <input type="checkbox" name="SelectedRoles" value="@role" />
                 @role
             </label>
 
             <br />
         }
     </div>
+
     <button type="submit" class="btn btn-primary">Create User</button>
     <a asp-action="Index" class="btn btn-secondary">Back to List</a>
 </form>
 
-@if (!ViewData.ModelState.IsValid)
-{
-    <div class="text-danger">
-        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
-        {
-            <p>@error.ErrorMessage</p>
-        }
-    </div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
 }

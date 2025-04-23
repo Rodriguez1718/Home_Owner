@@ -1,7 +1,25 @@
-﻿@model IEnumerable<Users>
+﻿@model IEnumerable<(Users User, List<string> Roles)>
+
+@{
+    ViewBag.Title = "User Management";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    var currentFilter = ViewBag.CurrentFilter as string;
+    var currentPage = ViewBag.CurrentPage as int? ?? 1;
+    var totalPages = ViewBag.TotalPages as int? ?? 1;
+}
 
 <h2>User Management</h2>
-<table>
+
+<form asp-action="Index" method="get" class="form-inline mb-3">
+    <div class="form-group">
+        <input type="text" name="searchString" value="@currentFilter" class="form-control" placeholder="Search by name or email..." />
+        <button type="submit" class="btn btn-outline-primary ml-2">Search</button>
+    </div>
+</form>
+
+<a asp-action="Create" class="btn btn-success mb-3">+ Create New User</a>
+
+<table class="table table-bordered">
     <thead>
         <tr>
             <th>Username</th>
@@ -11,20 +29,37 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var user in Model)
+        @foreach (var item in Model)
         {
             <tr>
-                <td>@user.UserName</td>
-                <td>@user.Email</td>
+                <td>@item.User.UserName</td>
+                <td>@item.User.Email</td>
                 <td>
-                    @* Later: show roles here *@
+                    @if (item.Roles.Any())
+                    {
+                        @string.Join(", ", item.Roles)
+                    }
+                    else
+                    {
+                        <span class="text-muted">None</span>
+                    }
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@user.Id">Edit</a> |
-                    <a asp-action="EditRoles" asp-route-id="@user.Id">Roles</a> |
-                    <a asp-action="Delete" asp-route-id="@user.Id">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.User.Id" class="btn btn-sm btn-primary">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.User.Id" class="btn btn-sm btn-danger">Delete</a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
+
+<nav>
+    <ul class="pagination">
+        @for (int i = 1; i <= totalPages; i++)
+        {
+            <li class="page-item @(i == currentPage ? "active" : "")">
+                <a class="page-link" asp-action="Index" asp-route-searchString="@currentFilter" asp-route-page="@i">@i</a>
+            </li>
+        }
+    </ul>
+</nav>
