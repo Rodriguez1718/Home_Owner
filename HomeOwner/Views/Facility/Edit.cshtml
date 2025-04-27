@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model HomeOwner.Models.Facility
+
+<h2>Edit Facility</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="FacilityId" />
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label asp-for="Description"></label>
+        <input asp-for="Description" />
+    </div>
+    <div>
+        <label asp-for="Capacity"></label>
+        <input asp-for="Capacity" type="number" />
+    </div>
+    <div>
+        <label asp-for="Location"></label>
+        <input asp-for="Location" />
+    </div>
+    <button type="submit">Save Changes</button>
+</form>
+<a asp-action="Index">Back to List</a>

@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+   @model HomeOwner.Models.Reservation
+
+
+<h2>Reserve a Facility</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label for="FacilityId">Facility</label>
+        <select asp-for="FacilityId" asp-items="@(new SelectList(ViewBag.Facilities, "FacilityId", "Name"))" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label for="ReservationDate">Date</label>
+        <input asp-for="ReservationDate" class="form-control" type="date" />
+    </div>
+    <div class="form-group">
+        <label for="StartTime">Start Time</label>
+        <input asp-for="StartTime" class="form-control" type="time" />
+    </div>
+    <div class="form-group">
+        <label for="EndTime">End Time</label>
+        <input asp-for="EndTime" class="form-control" type="time" />
+    </div>
+    <div class="form-group">
+        <label for="Purpose">Purpose</label>
+        <textarea asp-for="Purpose" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Reservation</button>
+</form>

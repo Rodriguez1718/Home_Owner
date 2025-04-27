@@ -1,0 +1,17 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model IEnumerable<HomeOwner.Models.Facility>
+
+<h2>Available Facilities</h2>
+
+@foreach (var facility in Model)
+{
+    <div>
+        <h4>@facility.Name</h4>
+        <p>@facility.Description</p>
+        <p>Capacity: @facility.Capacity</p>
+        <p>Location: @facility.Location</p>
+    </div>
+}

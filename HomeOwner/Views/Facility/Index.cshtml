@@ -1,0 +1,36 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model IEnumerable<HomeOwner.Models.Facility>
+
+<h2>Facilities</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Capacity</th>
+            <th>Location</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var facility in Model)
+        {
+            <tr>
+                <td>@facility.Name</td>
+                <td>@facility.Description</td>
+                <td>@facility.Capacity</td>
+                <td>@facility.Location</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@facility.FacilityId">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@facility.FacilityId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create", "Facility")" class="btn btn-primary">Add New Facility</a>

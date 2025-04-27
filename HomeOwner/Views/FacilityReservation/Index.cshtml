@@ -1,0 +1,43 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model IEnumerable<HomeOwner.Models.Reservation>
+
+<h2>Reservation Requests</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Facility</th>
+            <th>User</th>
+            <th>Date</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Purpose</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var r in Model)
+        {
+            <tr>
+                <td>@r.Facility.Name</td>
+                <td>@r.User.FullName</td>
+                <td>@r.ReservationDate.ToShortDateString()</td>
+                <td>@r.StartTime</td>
+                <td>@r.EndTime</td>
+                <td>@r.Purpose</td>
+                <td>@r.Status</td>
+                <td>
+                    @if (r.Status == "Pending")
+                    {
+                        <a href="@Url.Action("Approve", new { id = r.ReservationId })" class="btn btn-success btn-sm">Approve</a>
+                        <a href="@Url.Action("Decline", new { id = r.ReservationId })" class="btn btn-danger btn-sm">Decline</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -10,7 +10,10 @@ namespace HomeOwner.Data
         {
         }
 
-        public DbSet<Announcement> Announcements { get; set; } // Add this line
+        public DbSet<Announcement> Announcements { get; set; } // Add this lineeeee
+        public DbSet<Facility> Facilities { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
