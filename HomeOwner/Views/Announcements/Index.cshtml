@@ -1,19 +1,22 @@
 ﻿@{
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewBag.Title = "Announcements";
 }
 
 @model IEnumerable<HomeOwner.Models.Announcement>
 
 <h2>Announcements</h2>
-<a asp-action="Create" class="btn btn-primary" asp-controller="Announcements" role="button">Create New</a>
 
-<table class="table">
+
+<a asp-action="Create" class="btn btn-success mb-3">+ Create New Announcement</a>
+
+<table class="table table-bordered">
     <thead>
         <tr>
             <th>Title</th>
             <th>Content</th>
             <th>Date</th>
-            <th>Actions</th>
+            <th style="width: 220px;">Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -24,11 +27,11 @@
                 <td>@item.Content</td>
                 <td>@item.CreatedAt.ToShortDateString()</td>
                 <td>
-                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Details</a>
                     @if (User.IsInRole("Admin"))
                     {
-                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
-                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning ml-1">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger ml-1">Delete</a>
                     }
                 </td>
             </tr>

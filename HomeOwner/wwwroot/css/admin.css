@@ -1,26 +1,58 @@
-﻿.sidebar {
-    height: 100%;
-    width: 250px;
+﻿/* Sidebar styling */
+.sidebar {
+    height: 100vh;
+    width: 240px;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #111;
-    padding-top: 20px;
+    background-color: #1E1E2F;
+    padding-top: 30px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+    /* Sidebar links */
     .sidebar a {
-        padding: 10px 15px;
+        padding: 12px 20px;
         text-decoration: none;
-        font-size: 18px;
-        color: white;
+        font-size: 16px;
+        color: #E0E0E0;
         display: block;
+        transition: all 0.3s ease;
+        border-left: 4px solid transparent;
     }
 
+        /* Hover effect for links */
         .sidebar a:hover {
-            background-color: #575757;
+            background-color: #2A2A40;
+            color: #ffffff;
+            border-left: 4px solid #4FC3F7;
         }
 
+        /* Active link styling (optional) */
+        .sidebar a.active {
+            background-color: #2A2A40;
+            color: #ffffff;
+            border-left: 4px solid #4FC3F7;
+        }
+
+/* Main content area */
 .content {
-    margin-left: 260px;
-    padding: 20px;
+    margin-left: 240px;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F4F6F8;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Optional: Style the partial login */
+.sidebar .login-partial {
+    margin-top: auto;
+    padding: 15px 20px;
+    font-size: 14px;
+    color: #ccc;
+    border-top: 1px solid #444;
 }
