@@ -1,0 +1,111 @@
+﻿@model HomeOwner.Models.Reservation
+
+@{
+    ViewBag.Title = "Reserve Facility";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("form");
+
+            if (form) {
+                form.addEventListener("submit", function (e) {
+                    const start = document.querySelector("#StartTime").value;
+                    const end = document.querySelector("#EndTime").value;
+
+                    if (start && end && end <= start) {
+                        e.preventDefault(); // Stop form from submitting
+                        alert("End Time must be after Start Time.");
+                    }
+                });
+            }
+        });
+    </script>
+}
+
+<section class="breadcumb-area bg-img" style="background-image: url('@Url.Content("~/img/bg-img/hero1.jpg")')">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcumb-content">
+                    <h3 class="breadcumb-title">Reserve Facility</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="mb-4 text-center">Reservation Form</h4>
+
+                        @if (TempData["SuccessMessage"] != null)
+                        {
+                            <div class="alert alert-success text-center">
+                                @TempData["SuccessMessage"]
+                            </div>
+                        }
+
+                        @if (TempData["ErrorMessage"] != null)
+                        {
+                            <div class="alert alert-danger text-center">
+                                @TempData["ErrorMessage"]
+                            </div>
+                        }
+
+                        <form asp-action="Create" asp-controller="HomeReservation" method="post">
+                            @Html.AntiForgeryToken()
+
+                            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                            <div class="form-group mb-3">
+                                <label asp-for="FacilityId" class="form-label">Facility</label>
+                                <select asp-for="FacilityId" class="form-control" asp-items="@(new SelectList(ViewBag.Facilities, "FacilityId", "Name"))">
+                                    <option value="">-- Select Facility --</option>
+                                </select>
+                                <span asp-validation-for="FacilityId" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label asp-for="ReservationDate" class="form-label">Reservation Date</label>
+                                <input asp-for="ReservationDate" class="form-control" type="date" min="@DateTime.Today.ToString("yyyy-MM-dd")" />
+                                <span asp-validation-for="ReservationDate" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label asp-for="StartTime" class="form-label">Start Time</label>
+                                <input asp-for="StartTime" class="form-control" type="time" id="StartTime" />
+                                <span asp-validation-for="StartTime" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label asp-for="EndTime" class="form-label">End Time</label>
+                                <input asp-for="EndTime" class="form-control" type="time" id="EndTime" />
+                                <span asp-validation-for="EndTime" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label asp-for="Purpose" class="form-label">Purpose</label>
+                                <input asp-for="Purpose" class="form-control" placeholder="Birthday party, meeting, etc." />
+                                <span asp-validation-for="Purpose" class="text-danger"></span>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-success me-2">Submit Reservation</button>
+                                <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

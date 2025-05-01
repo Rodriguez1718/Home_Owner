@@ -1,0 +1,40 @@
+﻿@model HomeOwner.Models.Reservation
+
+@{
+    ViewBag.Title = "Reservation Confirmed";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Optional Hero/Breadcrumb -->
+<section class="breadcumb-area bg-img" style="background-image: url('@Url.Content("~/img/bg-img/hero1.jpg")')">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcumb-content">
+                    <h3 class="breadcumb-title">Reservation Confirmed</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Success Message Section -->
+<section class="section-padding-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow text-center">
+                    <div class="card-body">
+                        <h4 class="text-success mb-4">Reservation Successful!</h4>
+                        <div class="alert alert-success">
+                            <p>Your reservation for <strong>@Model.Facility?.Name</strong> on <strong>@Model.ReservationDate.ToString("f")</strong> has been successfully submitted.</p>
+                        </div>
+
+                        <a asp-action="MyReservations" class="btn btn-primary me-2">View My Reservations</a>
+                        <a asp-action="Index" class="btn btn-secondary">Back to Facilities</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -80,7 +80,7 @@
                                         <a href="#">Pages</a>
                                         <ul class="dropdown">
                                             <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                                            <li><a asp-controller="Home" asp-action="About">About Us</a></li>
+											<li><a asp-controller="Home" asp-action="About">About Us</a></li>
                                             <li>
                                                 <a href="#">Listings</a>
                                                 <ul class="dropdown">
@@ -103,13 +103,14 @@
                                     <li><a asp-controller="Home" asp-action="Listings">Properties</a></li>
                                     <li><a asp-controller="Home" asp-action="Blog">Blog</a></li>
                                     <li><a asp-controller="Home" asp-action="Announcements">Announcements</a></li>
+                                    <li><a asp-controller="HomeReservation" asp-action="Index">Facility Reservation</a></li>
                                     <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
                                     <partial name="_LoginPartial" />
                                 </ul>
 
                                 <!-- Search Form -->
                                 <div class="south-search-form">
-                                    <form action="#" method="post">
+                                    <form method="post">
                                         <input type="search" name="search" id="search" placeholder="Search Anything ...">
                                         <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                                     </form>
@@ -228,6 +229,9 @@
     <!-- Scripts -->
     <!-- Ensure jQuery loads first -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation-unobtrusive@3.2.12/dist/jquery.validate.unobtrusive.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
     <!-- Load Popper.js before Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"

@@ -1,651 +1,651 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HomeOwner.bundle.scp.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HomeOwner.bundle.scp.css",
       "PackagePath": "staticwebassets\\HomeOwner.xtqt8poygq.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\animate.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\animate.css",
       "PackagePath": "staticwebassets\\Content\\animate.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\bootstrap.min.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\Content\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\classy-nav.min.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\classy-nav.min.css",
       "PackagePath": "staticwebassets\\Content\\classy-nav.min.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\font-awesome.min.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\font-awesome.min.css",
       "PackagePath": "staticwebassets\\Content\\font-awesome.min.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\jquery-ui.min.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\jquery-ui.min.css",
       "PackagePath": "staticwebassets\\Content\\jquery-ui.min.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\magnific-popup.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\magnific-popup.css",
       "PackagePath": "staticwebassets\\Content\\magnific-popup.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\nice-select.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\nice-select.css",
       "PackagePath": "staticwebassets\\Content\\nice-select.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\owl.carousel.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\owl.carousel.css",
       "PackagePath": "staticwebassets\\Content\\owl.carousel.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\scss\\_mixin.scss",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\scss\\_mixin.scss",
       "PackagePath": "staticwebassets\\Content\\scss\\_mixin.scss"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\scss\\_responsive.scss",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\scss\\_responsive.scss",
       "PackagePath": "staticwebassets\\Content\\scss\\_responsive.scss"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\scss\\_theme_color.scss",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\scss\\_theme_color.scss",
       "PackagePath": "staticwebassets\\Content\\scss\\_theme_color.scss"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\scss\\_variables.scss",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\scss\\_variables.scss",
       "PackagePath": "staticwebassets\\Content\\scss\\_variables.scss"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\scss\\style.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\scss\\style.css",
       "PackagePath": "staticwebassets\\Content\\scss\\style.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\scss\\style.min.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\scss\\style.min.css",
       "PackagePath": "staticwebassets\\Content\\scss\\style.min.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\scss\\style.scss",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\scss\\style.scss",
       "PackagePath": "staticwebassets\\Content\\scss\\style.scss"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\style.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\style.css",
       "PackagePath": "staticwebassets\\Content\\style.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\style.css.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\style.css.map",
       "PackagePath": "staticwebassets\\Content\\style.css.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\Content\\themify-icons.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\Content\\themify-icons.css",
       "PackagePath": "staticwebassets\\Content\\themify-icons.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\compilerconfig.json",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\compilerconfig.json",
       "PackagePath": "staticwebassets\\compilerconfig.json"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\css\\Announcements.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\Announcements.css",
       "PackagePath": "staticwebassets\\css\\Announcements.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\css\\account.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\account.css",
       "PackagePath": "staticwebassets\\css\\account.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\css\\admin.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\admin.css",
       "PackagePath": "staticwebassets\\css\\admin.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\css\\login.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\css\\staff.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\staff.css",
       "PackagePath": "staticwebassets\\css\\staff.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\fonts\\FontAwesome.otf",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\fonts\\FontAwesome.otf",
       "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\fonts\\classy.eot",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\fonts\\classy.eot",
       "PackagePath": "staticwebassets\\fonts\\classy.eot"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\fonts\\classy.svg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\fonts\\classy.svg",
       "PackagePath": "staticwebassets\\fonts\\classy.svg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\fonts\\classy.ttf",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\fonts\\classy.ttf",
       "PackagePath": "staticwebassets\\fonts\\classy.ttf"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\fonts\\classy.woff",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\fonts\\classy.woff",
       "PackagePath": "staticwebassets\\fonts\\classy.woff"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\fonts\\fontawesome-webfont.eot",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\fonts\\fontawesome-webfont.svg",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\fonts\\fontawesome-webfont.ttf",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\fonts\\fontawesome-webfont.woff",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\fonts\\fontawesome-webfont.woff2",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\fonts\\themify.eot",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\fonts\\themify.eot",
       "PackagePath": "staticwebassets\\fonts\\themify.eot"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\fonts\\themify.svg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\fonts\\themify.svg",
       "PackagePath": "staticwebassets\\fonts\\themify.svg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\fonts\\themify.ttf",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\fonts\\themify.ttf",
       "PackagePath": "staticwebassets\\fonts\\themify.ttf"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\fonts\\themify.woff",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\fonts\\themify.woff",
       "PackagePath": "staticwebassets\\fonts\\themify.woff"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\images\\hero1.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\images\\hero1.jpg",
       "PackagePath": "staticwebassets\\images\\hero1.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\Castillo.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\Castillo.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\Castillo.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\Langomez.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\Langomez.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\Langomez.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\Patac.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\Patac.png",
       "PackagePath": "staticwebassets\\img\\bg-img\\Patac.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\Reyes.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\Reyes.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\Reyes.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\Rodriguez.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\Rodriguez.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\Rodriguez.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\about.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\about.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\about.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\cta.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\cta.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\cta.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\editor.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\editor.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\editor.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\fea-product.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\fea-product.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\fea-product.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\feature1.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\feature1.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\feature1.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\feature2.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\feature2.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\feature2.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\feature3.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\feature3.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\feature3.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\feature4.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\feature4.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\feature4.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\feature5.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\feature5.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\feature5.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\feature6.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\feature6.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\feature6.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\feature7.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\feature7.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\feature7.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\feature8.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\feature8.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\feature8.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\feature9.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\feature9.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\feature9.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\footer.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\footer.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\footer.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\hero1.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\hero1.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\hero1.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\hero2.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\hero2.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\hero2.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\hero3.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\hero3.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\hero3.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\hero4.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\hero4.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\hero4.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\hero5.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\hero5.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\hero5.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\listing.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\listing.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\listing.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\team1.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\team1.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\team1.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\team2.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\team2.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\team2.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\bg-img\\team3.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\bg-img\\team3.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\team3.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\blog-img\\blog1.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\blog-img\\blog1.jpg",
       "PackagePath": "staticwebassets\\img\\blog-img\\blog1.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\blog-img\\blog2.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\blog-img\\blog2.jpg",
       "PackagePath": "staticwebassets\\img\\blog-img\\blog2.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\blog-img\\blog3.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\blog-img\\blog3.jpg",
       "PackagePath": "staticwebassets\\img\\blog-img\\blog3.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\blog-img\\c-1.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\blog-img\\c-1.jpg",
       "PackagePath": "staticwebassets\\img\\blog-img\\c-1.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\blog-img\\c-2.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\blog-img\\c-2.jpg",
       "PackagePath": "staticwebassets\\img\\blog-img\\c-2.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\blog-img\\c-3.jpg",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\blog-img\\c-3.jpg",
       "PackagePath": "staticwebassets\\img\\blog-img\\c-3.jpg"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\core-img\\favicon.ico",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\core-img\\favicon.ico",
       "PackagePath": "staticwebassets\\img\\core-img\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\core-img\\logo.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\core-img\\logo.png",
       "PackagePath": "staticwebassets\\img\\core-img\\logo.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\core-img\\signature.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\core-img\\signature.png",
       "PackagePath": "staticwebassets\\img\\core-img\\signature.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\icons\\bathtub.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\icons\\bathtub.png",
       "PackagePath": "staticwebassets\\img\\icons\\bathtub.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\icons\\envelope.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\icons\\envelope.png",
       "PackagePath": "staticwebassets\\img\\icons\\envelope.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\icons\\flat.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\icons\\flat.png",
       "PackagePath": "staticwebassets\\img\\icons\\flat.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\icons\\garage.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\icons\\garage.png",
       "PackagePath": "staticwebassets\\img\\icons\\garage.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\icons\\home3.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\icons\\home3.png",
       "PackagePath": "staticwebassets\\img\\icons\\home3.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\icons\\house1.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\icons\\house1.png",
       "PackagePath": "staticwebassets\\img\\icons\\house1.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\icons\\house2.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\icons\\house2.png",
       "PackagePath": "staticwebassets\\img\\icons\\house2.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\icons\\location.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\icons\\location.png",
       "PackagePath": "staticwebassets\\img\\icons\\location.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\icons\\new.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\icons\\new.png",
       "PackagePath": "staticwebassets\\img\\icons\\new.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\icons\\new2.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\icons\\new2.png",
       "PackagePath": "staticwebassets\\img\\icons\\new2.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\icons\\phone-call.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\icons\\phone-call.png",
       "PackagePath": "staticwebassets\\img\\icons\\phone-call.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\icons\\prize.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\icons\\prize.png",
       "PackagePath": "staticwebassets\\img\\icons\\prize.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\icons\\prize2.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\icons\\prize2.png",
       "PackagePath": "staticwebassets\\img\\icons\\prize2.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\icons\\rent.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\icons\\rent.png",
       "PackagePath": "staticwebassets\\img\\icons\\rent.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\icons\\signature.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\icons\\signature.png",
       "PackagePath": "staticwebassets\\img\\icons\\signature.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\img\\icons\\space.png",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\img\\icons\\space.png",
       "PackagePath": "staticwebassets\\img\\icons\\space.png"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\js\\active.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\js\\active.js",
       "PackagePath": "staticwebassets\\js\\active.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\js\\classy-nav.min.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\js\\classy-nav.min.js",
       "PackagePath": "staticwebassets\\js\\classy-nav.min.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\js\\jquery-ui.min.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\js\\jquery-ui.min.js",
       "PackagePath": "staticwebassets\\js\\jquery-ui.min.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\js\\jquery\\jquery-2.2.4.min.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\js\\jquery\\jquery-2.2.4.min.js",
       "PackagePath": "staticwebassets\\js\\jquery\\jquery-2.2.4.min.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\js\\map-active.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\js\\map-active.js",
       "PackagePath": "staticwebassets\\js\\map-active.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\js\\nav-init.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\js\\nav-init.js",
       "PackagePath": "staticwebassets\\js\\nav-init.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\js\\plugins.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\js\\plugins.js",
       "PackagePath": "staticwebassets\\js\\plugins.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\js\\popper.min.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\js\\popper.min.js",
       "PackagePath": "staticwebassets\\js\\popper.min.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
