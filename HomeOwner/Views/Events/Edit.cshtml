@@ -1,0 +1,61 @@
+﻿@model HomeOwner.Models.Event
+
+@{
+    ViewBag.Title = "Edit Event";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Edit Event</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Title" class="control-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="StartDate" class="control-label"></label>
+        <input asp-for="StartDate" class="form-control" type="datetime-local" />
+        <span asp-validation-for="StartDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EndDate" class="control-label"></label>
+        <input asp-for="EndDate" class="form-control" type="datetime-local" />
+        <span asp-validation-for="EndDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Location" class="control-label"></label>
+        <input asp-for="Location" class="form-control" />
+        <span asp-validation-for="Location" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EventType" class="control-label"></label>
+        <input asp-for="EventType" class="form-control" />
+        <span asp-validation-for="EventType" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="BackgroundColor" class="control-label"></label>
+        <input asp-for="BackgroundColor" class="form-control" type="color" />
+        <span asp-validation-for="BackgroundColor" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

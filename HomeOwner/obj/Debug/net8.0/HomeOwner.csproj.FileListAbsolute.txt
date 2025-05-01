@@ -147,7 +147,6 @@ C:\Users\Kris John\source\repos\HomeOwner\HomeOwner\obj\Debug\net8.0\refint\Home
 C:\Users\Kris John\source\repos\HomeOwner\HomeOwner\obj\Debug\net8.0\HomeOwner.pdb
 C:\Users\Kris John\source\repos\HomeOwner\HomeOwner\obj\Debug\net8.0\HomeOwner.genruntimeconfig.cache
 C:\Users\Kris John\source\repos\HomeOwner\HomeOwner\obj\Debug\net8.0\ref\HomeOwner.dll
-C:\Users\Kris John\source\repos\HomeOwner\HomeOwner\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\admin47\Desktop\Home_Owner\HomeOwner\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\admin47\Desktop\Home_Owner\HomeOwner\bin\Debug\net8.0\appsettings.json
 C:\Users\admin47\Desktop\Home_Owner\HomeOwner\bin\Debug\net8.0\HomeOwner.staticwebassets.runtime.json
@@ -298,3 +297,4 @@ C:\Users\admin47\Desktop\Home_Owner\HomeOwner\obj\Debug\net8.0\HomeOwner.pdb
 C:\Users\admin47\Desktop\Home_Owner\HomeOwner\obj\Debug\net8.0\HomeOwner.genruntimeconfig.cache
 C:\Users\admin47\Desktop\Home_Owner\HomeOwner\obj\Debug\net8.0\ref\HomeOwner.dll
 C:\Users\admin47\Desktop\Home_Owner\HomeOwner\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Kris John\source\repos\HomeOwner\HomeOwner\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

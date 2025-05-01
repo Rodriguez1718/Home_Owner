@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "Event Calendar";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model List<HomeOwner.Models.Event>
+
+<h2>Event Calendar</h2>
+<a asp-action="Create" class="btn btn-primary mb-3">Add Event</a>
+
+<div id="calendar"></div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                editable: true, // 🔥 Enables drag and drop
+                eventDrop: function (info) {
+                    // This triggers when an event is moved to a new date
+                    var updatedEvent = {
+                        id: info.event.id,
+                        start: info.event.start.toISOString(),
+                        end: info.event.end ? info.event.end.toISOString() : null
+                    };
+
+                    fetch('/Events/UpdateEventDate', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val() // Anti-forgery token if enabled
+                        },
+                        body: JSON.stringify(updatedEvent)
+                    })
+                    .then(response => {
+                        if (!response.ok) throw new Error('Failed to update event date.');
+                        return response.json();
+                    })
+                    .then(data => {
+                        Swal.fire('Updated!', 'Event has been moved.', 'success');
+                    })
+                    .catch(error => {
+                        Swal.fire('Oops!', 'Something went wrong.', 'error');
+                        info.revert(); // Revert the change visually
+                    });
+                },
+                events: '/Events/GetEvents',
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                eventClick: function(info) {
+                    info.jsEvent.preventDefault();
+
+                    Swal.fire({
+                        title: info.event.title,
+                        html: `
+                            <strong>Start:</strong> ${info.event.start.toLocaleString()}<br/>
+                            <strong>End:</strong> ${info.event.end ? info.event.end.toLocaleString() : 'N/A'}<br/>
+                            <strong>ID:</strong> ${info.event.id}
+                        `,
+                        confirmButtonText: 'Edit Event',
+                        showCancelButton: true
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            window.location.href = "/Events/Edit/" + info.event.id;
+                        }
+                    });
+                }
+            });
+
+            calendar.render();
+        });
+    </script>
+}
+

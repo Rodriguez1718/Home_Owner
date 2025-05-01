@@ -103,8 +103,17 @@ namespace HomeOwner.Controllers
             {
                 try
                 {
-                    announcement.CreatedAt = DateTime.Now; // Update timestamp
-                    _context.Update(announcement);
+                    var existingAnnouncement = await _context.Announcements.FindAsync(id);
+                    if (existingAnnouncement == null) return NotFound();
+
+                    // Preserve existing fields that are not in the Bind list
+                    existingAnnouncement.Title = announcement.Title;
+                    existingAnnouncement.Content = announcement.Content;
+                    existingAnnouncement.CreatedAt = DateTime.Now;
+
+                    // AdminId stays unchanged here, so we avoid setting it to null
+
+                    _context.Update(existingAnnouncement);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -117,6 +126,7 @@ namespace HomeOwner.Controllers
             }
             return View(announcement);
         }
+
 
         // GET: Announcements/Delete/5 (Only Admins)
         [Authorize(Roles = "Admin")]

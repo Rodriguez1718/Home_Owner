@@ -5,3 +5,95 @@
 
 <h1>Admin Dashboard</h1>
 <p>Welcome to the Admin Dashboard!</p>
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Total Homeowners -->
+        <div class="col-md-4">
+            <div class="card text-center shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Total Homeowners</h5>
+                    <p class="card-text display-4">@ViewBag.TotalHomeowners</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Requests -->
+        <div class="col-md-4">
+            <div class="card text-center shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Total Requests</h5>
+                    <p class="card-text display-4">@ViewBag.TotalRequests</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Reservations -->
+        <div class="col-md-4">
+            <div class="card text-center shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Total Reservations</h5>
+                    <p class="card-text display-4">@ViewBag.TotalReservations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <!-- Requests Graph -->
+        <div class="col-md-12">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Requests Over Time</h5>
+                    <canvas id="requestsChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var ctx = document.getElementById('requestsChart').getContext('2d');
+            var requestsChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: @Html.Raw(Json.Serialize(ViewBag.RequestsOverTimeLabels)), // Dates
+                    datasets: [{
+                        label: 'Requests',
+                        data: @Html.Raw(Json.Serialize(ViewBag.RequestsOverTimeData)), // Request counts
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Date'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Number of Requests'
+                            },
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+}

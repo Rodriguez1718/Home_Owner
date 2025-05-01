@@ -13,6 +13,8 @@ namespace HomeOwner.Data
         public DbSet<Announcement> Announcements { get; set; } // Add this lineeeee
         public DbSet<Facility> Facilities { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<Event> Events { get; set; }
+
 
 
         protected override void OnModelCreating(ModelBuilder builder)

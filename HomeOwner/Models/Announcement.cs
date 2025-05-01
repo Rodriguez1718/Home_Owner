@@ -17,6 +17,7 @@ namespace HomeOwner.Models
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
         public string? AdminId { get; set; }
+
         public virtual Users? Admin { get; set; }  // Link to Users table
     }
 }
