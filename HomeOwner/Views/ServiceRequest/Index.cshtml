@@ -1,0 +1,123 @@
+﻿@model IEnumerable<HomeOwner.Models.ServiceRequest>
+
+@{
+    ViewBag.Title = "Service Requests";
+
+    if (User.IsInRole("Admin"))
+    {
+        Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    }
+    else if (User.IsInRole("Staff"))
+    {
+        Layout = "~/Views/Shared/_StaffLayout.cshtml";
+    }
+    else if (User.IsInRole("HomeOwner"))
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml"; // Default layout
+    }
+}
+
+@functions {
+    public string GetStatusBadgeClass(string status)
+    {
+        return status switch
+        {
+            "Approved" => "badge-success", // Green for approved
+            "Declined" => "badge-danger",  // Red for declined
+            _ => "badge-secondary"         // Gray for pending or unknown
+        };
+    }
+}
+
+@if (User.IsInRole("HomeOwner"))
+{
+    <section class="breadcumb-area bg-img" style="background-image: url('@Url.Content("~/img/bg-img/hero1.jpg")')">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcumb-content">
+                        <h3 class="breadcumb-title">Service Request</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+
+<section class="section-padding-100">
+    <div class="container">
+        @if (User.IsInRole("HomeOwner"))
+        {
+            <div class="mb-4 text-end">
+                <a asp-action="Create" class="btn btn-primary">Create New Service Request</a>
+            </div>
+        }
+
+        @if (!Model.Any())
+        {
+            <p class="text-center">No service requests available at the moment.</p>
+        }
+        else
+        {
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Request Date</th>
+                            <th>Status</th>
+                            <th>Approval Date</th>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <th>Created By</th>
+                                <th>Actions</th>
+                            }
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Title</td>
+                                <td>@item.Description</td>
+                                <td>@item.RequestDate.ToShortDateString()</td>
+                                <td>
+                                    <span class="badge @GetStatusBadgeClass(item.Status)">
+                                        @item.Status
+                                    </span>
+                                </td>
+                                <td>@item.ApprovalDate?.ToShortDateString() ?? "N/A"</td>
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <td>@item.CreatedBy</td>
+                                    <td>
+                                        @if (item.Status == "Pending")
+                                        {
+                                            <form asp-action="Approve" asp-route-id="@item.Id" method="post" style="display:inline;">
+                                                <button type="submit" class="btn btn-success btn-sm">Approve</button>
+                                            </form>
+                                            <form asp-action="Decline" asp-route-id="@item.Id" method="post" style="display:inline;">
+                                                <button type="submit" class="btn btn-danger btn-sm">Decline</button>
+                                            </form>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge @GetStatusBadgeClass(item.Status)">
+                                                @item.Status
+                                            </span>
+                                        }
+                                    </td>
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </div>
+</section>

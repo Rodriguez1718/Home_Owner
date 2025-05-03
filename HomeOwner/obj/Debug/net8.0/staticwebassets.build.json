@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Re/EVbmTjV0k/v/X0MXecsmetLP9tEp0t+MSnIMPFbI=",
+  "Hash": "cKITg7o+28HQ2+25hCGkMNPU/v3C9FSk5OYJWd8pHzE=",
   "Source": "HomeOwner",
   "BasePath": "_content/HomeOwner",
   "Mode": "Default",
@@ -1774,8 +1774,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vfdlnp86vv",
-      "Integrity": "tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00=",
+      "Fingerprint": "8daxhoqw78",
+      "Integrity": "vGOxnNESumMrJeBt99XNv1CuaUFPZnF0MGpeH29viD0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Announcements.css"
@@ -6424,6 +6424,51 @@
       ]
     },
     {
+      "Route": "css/Announcements.8daxhoqw78.css",
+      "AssetFile": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\Announcements.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "246"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vGOxnNESumMrJeBt99XNv1CuaUFPZnF0MGpeH29viD0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 11:26:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8daxhoqw78"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Announcements.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vGOxnNESumMrJeBt99XNv1CuaUFPZnF0MGpeH29viD0="
+        }
+      ]
+    },
+    {
       "Route": "css/Announcements.css",
       "AssetFile": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\Announcements.css",
       "Selectors": [],
@@ -6434,7 +6479,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1146"
+          "Value": "246"
         },
         {
           "Name": "Content-Type",
@@ -6442,11 +6487,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00=\""
+          "Value": "\"vGOxnNESumMrJeBt99XNv1CuaUFPZnF0MGpeH29viD0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 17:49:01 GMT"
+          "Value": "Sat, 03 May 2025 11:26:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6456,52 +6501,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00="
-        }
-      ]
-    },
-    {
-      "Route": "css/Announcements.vfdlnp86vv.css",
-      "AssetFile": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\Announcements.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1146"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 17:49:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vfdlnp86vv"
-        },
-        {
-          "Name": "label",
-          "Value": "css/Announcements.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00="
+          "Value": "sha256-vGOxnNESumMrJeBt99XNv1CuaUFPZnF0MGpeH29viD0="
         }
       ]
     },

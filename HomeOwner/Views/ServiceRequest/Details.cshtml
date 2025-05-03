@@ -1,0 +1,46 @@
+﻿@model HomeOwner.Models.ServiceRequest
+
+@{
+    ViewBag.Title = "Service Request Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Service Request Details</h1>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">Title</dt>
+        <dd class="col-sm-10">@Model.Title</dd>
+
+        <dt class="col-sm-2">Description</dt>
+        <dd class="col-sm-10">@Model.Description</dd>
+
+        <dt class="col-sm-2">Request Date</dt>
+        <dd class="col-sm-10">@Model.RequestDate.ToShortDateString()</dd>
+
+        <dt class="col-sm-2">Status</dt>
+        <dd class="col-sm-10">@Model.Status</dd>
+
+        <dt class="col-sm-2">Approved By</dt>
+        <dd class="col-sm-10">@Model.ApprovedBy</dd>
+
+        <dt class="col-sm-2">Approval Date</dt>
+        <dd class="col-sm-10">@Model.ApprovalDate?.ToShortDateString()</dd>
+    </dl>
+
+    @if (User.IsInRole("Admin") || User.IsInRole("Staff"))
+    {
+        @if (Model.Status == "Pending")
+        {
+            <form asp-action="Approve" asp-route-id="@Model.Id" method="post" style="display:inline;">
+                <button type="submit" class="btn btn-success">Approve</button>
+            </form>
+            <form asp-action="Decline" asp-route-id="@Model.Id" method="post" style="display:inline;">
+                <button type="submit" class="btn btn-danger">Decline</button>
+            </form>
+        }
+    }
+
+</div>
+
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>

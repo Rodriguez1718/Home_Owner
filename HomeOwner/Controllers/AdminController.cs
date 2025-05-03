@@ -26,20 +26,20 @@ public class AdminController : Controller
             .CountAsync();
 
         // Total Requests
-        //ViewBag.TotalRequests = await _context.ServiceRequests.CountAsync();
+        ViewBag.TotalRequests = await _context.ServiceRequests.CountAsync();
 
         // Total Reservations
         ViewBag.TotalReservations = await _context.Reservations.CountAsync();
 
         // Requests Over Time (Example: Group by Date)
-        //var requestsOverTime = await _context.ServiceRequests
-            //.GroupBy(r => r.CreatedAt.Date)
-            //.Select(g => new { Date = g.Key, Count = g.Count() })
-           // .OrderBy(g => g.Date)
-           // .ToListAsync();
+        var requestsOverTime = await _context.ServiceRequests
+            .GroupBy(r => r.RequestDate.Date)
+            .Select(g => new { Date = g.Key, Count = g.Count() })
+            .OrderBy(g => g.Date)
+            .ToListAsync();
 
-       // ViewBag.RequestsOverTimeLabels = requestsOverTime.Select(r => r.Date.ToString("yyyy-MM-dd")).ToList();
-        //ViewBag.RequestsOverTimeData = requestsOverTime.Select(r => r.Count).ToList();
+        ViewBag.RequestsOverTimeLabels = requestsOverTime.Select(r => r.Date.ToString("yyyy-MM-dd")).ToList();
+        ViewBag.RequestsOverTimeData = requestsOverTime.Select(r => r.Count).ToList();
 
         return View();
     }

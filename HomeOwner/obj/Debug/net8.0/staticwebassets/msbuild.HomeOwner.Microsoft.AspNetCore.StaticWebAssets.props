@@ -390,8 +390,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vfdlnp86vv</Fingerprint>
-      <Integrity>tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00=</Integrity>
+      <Fingerprint>8daxhoqw78</Fingerprint>
+      <Integrity>vGOxnNESumMrJeBt99XNv1CuaUFPZnF0MGpeH29viD0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Announcements.css'))</OriginalItemSpec>

@@ -1,0 +1,79 @@
+﻿@model IEnumerable<HomeOwner.Models.Event>
+
+@{
+    ViewBag.Title = "Event Calendar";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Use the homeowner layout
+}
+
+<section class="breadcumb-area bg-img" style="background-image: url('@Url.Content("~/img/bg-img/hero1.jpg")')">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcumb-content">
+                    <h3 class="breadcumb-title">Event Calendar</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding-100">
+    <div class="container">
+        <!-- Header Section -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <p class="text-muted">Stay updated with the latest events happening in your community.</p>
+            </div>
+        </div>
+
+        <!-- Calendar Section -->
+        <div class="row">
+            <div class="col-12">
+                <div id="calendar" class="shadow-sm p-3 bg-white rounded"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet" />
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: @Html.Raw(Json.Serialize(Model.Select(e => new
+            {
+                id = e.Id,
+                title = e.Title,
+                start = e.StartDate.ToString("yyyy-MM-ddTHH:mm:ss"),
+                end = e.EndDate?.ToString("yyyy-MM-ddTHH:mm:ss"),
+                description = e.Description,
+                location = e.Location,
+                backgroundColor = e.BackgroundColor ?? "#3788d8"
+            }))),
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                eventClick: function(info) {
+                    Swal.fire({
+                        title: info.event.title,
+                        html: `
+                            <strong>Start:</strong> ${info.event.start.toLocaleString()}<br/>
+                            <strong>End:</strong> ${info.event.end ? info.event.end.toLocaleString() : 'N/A'}<br/>
+                            <strong>Location:</strong> ${info.event.extendedProps.location}<br/>
+                            <strong>Description:</strong> ${info.event.extendedProps.description}
+                        `,
+                        confirmButtonText: 'Close'
+                    });
+                }
+            });
+
+            calendar.render();
+        });
+    </script>
+}

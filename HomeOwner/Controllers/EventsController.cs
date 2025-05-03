@@ -1,5 +1,6 @@
 ﻿using HomeOwner.Data;
 using HomeOwner.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -134,5 +135,17 @@ namespace HomeOwner.Controllers
 
             return View(ev);
         }
+
+        // For HomeOwners to view the calendar
+        [Authorize(Roles = "HomeOwner")]
+        public async Task<IActionResult> Calendar()
+        {
+            // Fetch events to display on the calendar
+            var events = await _context.Events.ToListAsync();
+
+            // Pass the events to the view
+            return View(events);
+        }
+
     }
 }

@@ -1,21 +1,43 @@
 ﻿@model IEnumerable<HomeOwner.Models.Announcement>
 
-
 <head>
     <link rel="stylesheet" href="~/css/Announcements.css" />
 </head>
 
-<div class="announcements">
-    <h2>Announcements</h2>
-    <ul>
-        @foreach (var announcement in Model)
-        {
-            <li>
-                <h3>@announcement.Title</h3>
-                <p>@announcement.Content</p>
-                <p><small>@announcement.CreatedAt.ToString("MMMM dd, yyyy")</small></p>
-            </li>
-        }
-    </ul>
-</div>
+<section class="section-padding-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Announcements</h2>
+            </div>
+        </div>
 
+        @if (!Model.Any())
+        {
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">No announcements available at the moment.</p>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="row">
+                @foreach (var announcement in Model)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">@announcement.Title</h5>
+                                <p class="card-text">@announcement.Content</p>
+                                <p class="text-muted">
+                                    <small>Posted on @announcement.CreatedAt.ToString("MMMM dd, yyyy")</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</section>

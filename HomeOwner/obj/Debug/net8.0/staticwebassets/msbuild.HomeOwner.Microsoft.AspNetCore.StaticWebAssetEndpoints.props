@@ -252,17 +252,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"j7u1q0dqqk"},{"Name":"integrity","Value":"sha256-0QZUVluLIbzW1um8U1wvaZgMt59hBi6QhKH9HWX98h0="},{"Name":"label","Value":"_content/HomeOwner/css/admin.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1436"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220QZUVluLIbzW1um8U1wvaZgMt59hBi6QhKH9HWX98h0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 14:13:34 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HomeOwner/css/Announcements.8daxhoqw78.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Announcements.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8daxhoqw78"},{"Name":"integrity","Value":"sha256-vGOxnNESumMrJeBt99XNv1CuaUFPZnF0MGpeH29viD0="},{"Name":"label","Value":"_content/HomeOwner/css/Announcements.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"246"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022vGOxnNESumMrJeBt99XNv1CuaUFPZnF0MGpeH29viD0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 03 May 2025 11:26:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HomeOwner/css/Announcements.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Announcements.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1146"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00=\u0022"},{"Name":"Last-Modified","Value":"Thu, 10 Apr 2025 17:49:01 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/HomeOwner/css/Announcements.vfdlnp86vv.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Announcements.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vfdlnp86vv"},{"Name":"integrity","Value":"sha256-tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00="},{"Name":"label","Value":"_content/HomeOwner/css/Announcements.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1146"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tU0w6mG0JeT6rB2u2ziyNHvgRZRJTDLafoBD5Oi0i00=\u0022"},{"Name":"Last-Modified","Value":"Thu, 10 Apr 2025 17:49:01 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vGOxnNESumMrJeBt99XNv1CuaUFPZnF0MGpeH29viD0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"246"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022vGOxnNESumMrJeBt99XNv1CuaUFPZnF0MGpeH29viD0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 03 May 2025 11:26:56 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HomeOwner/css/login.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\login.css'))</AssetFile>
