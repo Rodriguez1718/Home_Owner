@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cKITg7o+28HQ2+25hCGkMNPU/v3C9FSk5OYJWd8pHzE=",
+  "Hash": "9Re3zGQwSX+IyLnCC6ByF6lMG51fC2Jiw3cEBvQrZ4s=",
   "Source": "HomeOwner",
   "BasePath": "_content/HomeOwner",
   "Mode": "Default",
@@ -1753,8 +1753,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "j7u1q0dqqk",
-      "Integrity": "0QZUVluLIbzW1um8U1wvaZgMt59hBi6QhKH9HWX98h0=",
+      "Fingerprint": "4aixthdb9v",
+      "Integrity": "NHQWAYPP/J/FmTo312J7MzvxJEvYf0cto9DqusVIGB4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\admin.css"
@@ -6342,6 +6342,51 @@
       ]
     },
     {
+      "Route": "css/admin.4aixthdb9v.css",
+      "AssetFile": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NHQWAYPP/J/FmTo312J7MzvxJEvYf0cto9DqusVIGB4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 20:37:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4aixthdb9v"
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NHQWAYPP/J/FmTo312J7MzvxJEvYf0cto9DqusVIGB4="
+        }
+      ]
+    },
+    {
       "Route": "css/admin.css",
       "AssetFile": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\admin.css",
       "Selectors": [],
@@ -6352,7 +6397,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1436"
+          "Value": "2496"
         },
         {
           "Name": "Content-Type",
@@ -6360,11 +6405,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0QZUVluLIbzW1um8U1wvaZgMt59hBi6QhKH9HWX98h0=\""
+          "Value": "\"NHQWAYPP/J/FmTo312J7MzvxJEvYf0cto9DqusVIGB4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 14:13:34 GMT"
+          "Value": "Mon, 05 May 2025 20:37:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6374,52 +6419,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0QZUVluLIbzW1um8U1wvaZgMt59hBi6QhKH9HWX98h0="
-        }
-      ]
-    },
-    {
-      "Route": "css/admin.j7u1q0dqqk.css",
-      "AssetFile": "C:\\Users\\Kris John\\source\\repos\\HomeOwner\\HomeOwner\\wwwroot\\css\\admin.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1436"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0QZUVluLIbzW1um8U1wvaZgMt59hBi6QhKH9HWX98h0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 14:13:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "j7u1q0dqqk"
-        },
-        {
-          "Name": "label",
-          "Value": "css/admin.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-0QZUVluLIbzW1um8U1wvaZgMt59hBi6QhKH9HWX98h0="
+          "Value": "sha256-NHQWAYPP/J/FmTo312J7MzvxJEvYf0cto9DqusVIGB4="
         }
       ]
     },

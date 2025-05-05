@@ -1,0 +1,30 @@
+﻿@model IEnumerable<HomeOwner.Models.ForumPost>
+@{
+    ViewBag.Title = ViewBag.ForumTitle;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@ViewBag.ForumTitle</h1>
+<a asp-action="AddPost" asp-route-forumId="@ViewBag.ForumId" class="btn btn-primary">Add New Post</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var post in Model)
+        {
+            <tr>
+                <td>@post.Title</td>
+                <td>@post.Content</td>
+                <td>
+                    <a asp-action="PostDetails" asp-route-id="@post.Id" class="btn btn-secondary">View Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

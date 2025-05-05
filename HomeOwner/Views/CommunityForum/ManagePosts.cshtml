@@ -1,0 +1,30 @@
+﻿@model IEnumerable<HomeOwner.Models.ForumPost>
+@{
+    ViewBag.Title = "Manage Posts";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Manage Posts</h1>
+<a asp-action="CreatePost" asp-route-forumId="@ViewBag.ForumId" class="btn btn-primary">Create New Post</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var post in Model)
+        {
+            <tr>
+                <td>@post.Title</td>
+                <td>@post.Content</td>
+                <td>
+                    <!-- Add edit/delete actions here -->
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

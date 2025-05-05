@@ -1,0 +1,46 @@
+﻿@model IEnumerable<HomeOwner.Models.CommunityForum>
+
+@{
+    ViewBag.Title = "Community Forums";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Optional Breadcrumb Area -->
+<section class="breadcumb-area bg-img" style="background-image: url('@Url.Content("~/img/bg-img/hero1.jpg")')">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcumb-content">
+                    <h3 class="breadcumb-title">Community Forums</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Forum Listing Area -->
+<section class="section-padding-100">
+    <div class="container">
+        @if (!Model.Any())
+        {
+            <p class="text-center">No forums available at the moment.</p>
+        }
+        else
+        {
+            <div class="row justify-content-center">
+                @foreach (var forum in Model)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">@forum.Title</h5>
+                                <p class="card-text">@forum.Description</p>
+                                <a asp-action="ForumPosts" asp-route-id="@forum.Id" class="btn btn-primary">View Posts</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</section>

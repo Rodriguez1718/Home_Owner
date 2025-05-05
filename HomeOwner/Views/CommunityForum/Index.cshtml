@@ -1,0 +1,31 @@
+﻿@model IEnumerable<HomeOwner.Models.CommunityForum>
+
+@{
+    ViewBag.Title = "Community Forums";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Community Forums</h1>
+<a asp-action="Create" class="btn btn-primary">Create New Forum</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var forum in Model)
+        {
+            <tr>
+                <td>@forum.Title</td>
+                <td>@forum.Description</td>
+                <td>
+                    <a asp-action="ManagePosts" asp-route-id="@forum.Id" class="btn btn-secondary">Manage Posts</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

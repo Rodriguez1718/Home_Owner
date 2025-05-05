@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = ViewBag.PostTitle;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@ViewBag.PostTitle</h1>
+<p>@ViewBag.PostContent</p>
+
+<h2>Comments</h2>
+@if (!Model.Any())
+{
+    <p>No comments yet. Be the first to comment!</p>
+}
+else
+{
+    <ul class="list-group">
+        @foreach (var comment in Model)
+        {
+            <li class="list-group-item">
+                <strong>@comment.User.FullName:</strong> @comment.Content
+                <br />
+                <small class="text-muted">@comment.CreatedAt.ToString("g")</small>
+            </li>
+        }
+    </ul>
+}
+
+<h3>Add a Comment</h3>
+<form asp-action="AddComment" method="post">
+    <input type="hidden" name="PostId" value="@ViewBag.PostId" />
+    <div class="form-group">
+        <label for="Content">Your Comment</label>
+        <textarea name="Content" class="form-control" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

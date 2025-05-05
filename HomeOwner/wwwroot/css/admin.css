@@ -1,7 +1,7 @@
 ﻿/* Sidebar styling */
 .sidebar {
     height: 100vh;
-    width: 240px;
+    width: 260px; /* Sidebar width */
     position: fixed;
     top: 0;
     left: 0;
@@ -10,42 +10,56 @@
     box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: auto; /* Scroll for long content */
+    z-index: 1000; /* Ensure sidebar is above other elements */
 }
 
     /* Sidebar links */
     .sidebar a {
-        padding: 12px 20px;
+        padding: 15px 25px;
         text-decoration: none;
         font-size: 16px;
         color: #E0E0E0;
-        display: block;
+        display: flex;
+        align-items: center;
         transition: all 0.3s ease;
         border-left: 4px solid transparent;
+        gap: 10px;
     }
 
-        /* Hover effect for links */
         .sidebar a:hover {
             background-color: #2A2A40;
             color: #ffffff;
             border-left: 4px solid #4FC3F7;
         }
 
-        /* Active link styling (optional) */
         .sidebar a.active {
             background-color: #2A2A40;
             color: #ffffff;
             border-left: 4px solid #4FC3F7;
+            font-weight: bold;
+        }
+
+        /* Sidebar icons */
+        .sidebar a i {
+            font-size: 18px;
+            color: #4FC3F7;
+        }
+
+        .sidebar a:hover i {
+            color: #ffffff;
         }
 
 /* Main content area */
 .content {
-    margin-left: 240px;
+    margin-left: 260px; /* Adjusted for sidebar width */
     padding: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F4F6F8;
     min-height: 100vh;
     color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Optional: Style the partial login */
@@ -55,4 +69,44 @@
     font-size: 14px;
     color: #ccc;
     border-top: 1px solid #444;
+    text-align: center;
+}
+
+/* Sidebar header */
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .sidebar-header img {
+        max-width: 80%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+/* Scrollbar styling for sidebar */
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #4FC3F7;
+    border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background-color: #1E1E2F;
+}
+
+/* Fix for content overflow */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
 }

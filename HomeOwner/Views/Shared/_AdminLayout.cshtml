@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -8,22 +8,55 @@
     <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
     <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" /> <!-- Font Awesome -->
 </head>
 <body>
     <div class="sidebar">
-        <a asp-controller="Admin" asp-action="AdminDashboard">Dashboard</a>
-        <a asp-controller="AdminUsers" asp-action="Index">User Management</a>
-        <a asp-controller="Announcements" asp-action="Index">Announcements</a>
-        <a asp-controller="Facility" asp-action="Index">Manage Facilities</a>
-        <a asp-controller="FacilityReservation" asp-action="Index">Facility Reservation</a>
-        <a asp-controller="ServiceRequest" asp-action="Index">Service Requests</a>
-        <a asp-controller="Documents" asp-action="Index">Document Management</a>
-        <a asp-controller="CommunityForum" asp-action="Index">Community Forum</a>
-        <a asp-controller="SecurityFeatures" asp-action="Index">Security Features</a>
-        <a asp-controller="Events" asp-action="Index">Event Calendar</a>
-        <a asp-controller="Feedback" asp-action="Index">Feedback</a>
-        <a asp-controller="ContactDirectory" asp-action="Index">Contact Directory</a>
-        <a asp-controller="Reports" asp-action="Index">Reports</a>
+        <!-- Add the image at the top of the sidebar -->
+        <div class="sidebar-header">
+            <img src="~/img/core-img/logo.png" alt="Admin Logo"/>
+        </div>
+
+        <!-- Sidebar navigation links with icons -->
+        <a asp-controller="Admin" asp-action="AdminDashboard">
+            <i class="fas fa-tachometer-alt"></i> Dashboard
+        </a>
+        <a asp-controller="AdminUsers" asp-action="Index">
+            <i class="fas fa-users"></i> User Management
+        </a>
+        <a asp-controller="Announcements" asp-action="Index">
+            <i class="fas fa-bullhorn"></i> Announcements
+        </a>
+        <a asp-controller="Facility" asp-action="Index">
+            <i class="fas fa-building"></i> Manage Facilities
+        </a>
+        <a asp-controller="FacilityReservation" asp-action="Index">
+            <i class="fas fa-calendar-check"></i> Facility Reservation
+        </a>
+        <a asp-controller="ServiceRequest" asp-action="Index">
+            <i class="fas fa-tools"></i> Service Requests
+        </a>
+        <a asp-controller="Documents" asp-action="Index">
+            <i class="fas fa-file-alt"></i> Document Management
+        </a>
+        <a asp-controller="CommunityForum" asp-action="Index">
+            <i class="fas fa-comments"></i> Community Forum
+        </a>
+        <a asp-controller="SecurityFeatures" asp-action="Index">
+            <i class="fas fa-shield-alt"></i> Security Features
+        </a>
+        <a asp-controller="Events" asp-action="Index">
+            <i class="fas fa-calendar-alt"></i> Event Calendar
+        </a>
+        <a asp-controller="Feedback" asp-action="Index">
+            <i class="fas fa-comment-dots"></i> Feedback
+        </a>
+        <a asp-controller="ContactDirectory" asp-action="Index">
+            <i class="fas fa-address-book"></i> Contact Directory
+        </a>
+        <a asp-controller="Reports" asp-action="Index">
+            <i class="fas fa-chart-bar"></i> Reports
+        </a>
         <partial name="_LoginPartial" />
     </div>
 

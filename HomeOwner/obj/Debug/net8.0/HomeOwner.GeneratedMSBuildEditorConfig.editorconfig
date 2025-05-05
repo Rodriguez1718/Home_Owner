@@ -88,6 +88,38 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub3VuY2VtZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/CommunityForum/AddPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbXVuaXR5Rm9ydW1cQWRkUG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/CommunityForum/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbXVuaXR5Rm9ydW1cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/CommunityForum/CreatePost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbXVuaXR5Rm9ydW1cQ3JlYXRlUG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/CommunityForum/ForumPosts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbXVuaXR5Rm9ydW1cRm9ydW1Qb3N0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/CommunityForum/Forums.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbXVuaXR5Rm9ydW1cRm9ydW1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/CommunityForum/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbXVuaXR5Rm9ydW1cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/CommunityForum/ManagePosts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbXVuaXR5Rm9ydW1cTWFuYWdlUG9zdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/CommunityForum/PostDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbXVuaXR5Rm9ydW1cUG9zdERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Kris John/source/repos/HomeOwner/HomeOwner/Views/Events/Calendar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXENhbGVuZGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
