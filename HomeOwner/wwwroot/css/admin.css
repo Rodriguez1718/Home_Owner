@@ -1,7 +1,7 @@
 ﻿/* Sidebar styling */
 .sidebar {
     height: 100vh;
-    width: 240px;
+    width: 260px; /* Increased width for better spacing */
     position: fixed;
     top: 0;
     left: 0;
@@ -10,18 +10,21 @@
     box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font for a modern look */
+    overflow-y: auto; /* Added scroll for long content */
 }
 
     /* Sidebar links */
     .sidebar a {
-        padding: 12px 20px;
+        padding: 15px 25px; /* Increased padding for better spacing */
         text-decoration: none;
         font-size: 16px;
         color: #E0E0E0;
-        display: block;
+        display: flex; /* Flexbox for aligning icons and text */
+        align-items: center;
         transition: all 0.3s ease;
         border-left: 4px solid transparent;
+        gap: 10px; /* Space between icon and text */
     }
 
         /* Hover effect for links */
@@ -31,18 +34,30 @@
             border-left: 4px solid #4FC3F7;
         }
 
-        /* Active link styling (optional) */
+        /* Active link styling */
         .sidebar a.active {
             background-color: #2A2A40;
             color: #ffffff;
             border-left: 4px solid #4FC3F7;
+            font-weight: bold; /* Highlight active link */
+        }
+
+        /* Sidebar icons */
+        .sidebar a i {
+            font-size: 18px; /* Icon size */
+            color: #4FC3F7; /* Icon color */
+        }
+
+        /* Hover effect for icons */
+        .sidebar a:hover i {
+            color: #ffffff;
         }
 
 /* Main content area */
 .content {
-    margin-left: 240px;
+    margin-left: 260px; /* Adjusted for new sidebar width */
     padding: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F4F6F8;
     min-height: 100vh;
     color: #333;
@@ -55,4 +70,30 @@
     font-size: 14px;
     color: #ccc;
     border-top: 1px solid #444;
+    text-align: center;
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .sidebar-header img {
+        max-width: 80%;
+        height: auto;
+        border-radius: 10px; /* Optional: Add rounded corners */
+    }
+
+/* Scrollbar styling for sidebar */
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #4FC3F7;
+    border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background-color: #1E1E2F;
 }
