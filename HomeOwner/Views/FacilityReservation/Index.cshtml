@@ -4,40 +4,63 @@
 
 @model IEnumerable<HomeOwner.Models.Reservation>
 
-<h2>Reservation Requests</h2>
+<h2 class="mb-4 text-primary">Reservation Requests</h2>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Facility</th>
-            <th>User</th>
-            <th>Date</th>
-            <th>Start</th>
-            <th>End</th>
-            <th>Purpose</th>
-            <th>Status</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var r in Model)
-        {
+<div class="table-responsive shadow-sm rounded">
+    <table class="table table-striped table-hover align-middle">
+        <thead class="table-dark">
             <tr>
-                <td>@r.Facility.Name</td>
-                <td>@r.User.FullName</td>
-                <td>@r.ReservationDate.ToShortDateString()</td>
-                <td>@r.StartTime</td>
-                <td>@r.EndTime</td>
-                <td>@r.Purpose</td>
-                <td>@r.Status</td>
-                <td>
-                    @if (r.Status == "Pending")
-                    {
-                        <a href="@Url.Action("Approve", new { id = r.ReservationId })" class="btn btn-success btn-sm">Approve</a>
-                        <a href="@Url.Action("Decline", new { id = r.ReservationId })" class="btn btn-danger btn-sm">Decline</a>
-                    }
-                </td>
+                <th>Facility</th>
+                <th>User</th>
+                <th>Date</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Purpose</th>
+                <th>Status</th>
+                <th>Action</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var r in Model)
+            {
+                <tr>
+                    <td>@r.Facility.Name</td>
+                    <td>@r.User.FullName</td>
+                    <td>@r.ReservationDate.ToShortDateString()</td>
+                    <td>@r.StartTime</td>
+                    <td>@r.EndTime</td>
+                    <td>@r.Purpose</td>
+                    <td>
+                        <span class="badge @GetStatusBadgeClass(r.Status)">
+                            @r.Status
+                        </span>
+                    </td>
+                    <td>
+                        @if (r.Status == "Pending")
+                        {
+                            <a href="@Url.Action("Approve", new { id = r.ReservationId })" class="btn btn-success btn-sm me-2">
+                                <i class="fas fa-check"></i> Approve
+                            </a>
+                            <a href="@Url.Action("Decline", new { id = r.ReservationId })" class="btn btn-danger btn-sm">
+                                <i class="fas fa-times"></i> Decline
+                            </a>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@functions {
+    public string GetStatusBadgeClass(string status)
+    {
+        return status switch
+        {
+            "Approved" => "bg-success text-white", // Green for approved
+            "Declined" => "bg-danger text-white",  // Red for declined
+            "Pending" => "bg-warning text-dark",   // Yellow for pending
+            _ => "bg-secondary text-white"         // Gray for unknown
+        };
+    }
+}

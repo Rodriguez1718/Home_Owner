@@ -35,17 +35,21 @@
 
 @if (User.IsInRole("HomeOwner"))
 {
-    <section class="breadcumb-area bg-img" style="background-image: url('@Url.Content("~/img/bg-img/hero1.jpg")')">
-        <div class="container h-100">
+    <section class="breadcumb-area bg-img position-relative" style="background-image: url('@Url.Content("~/img/bg-img/hero1.jpg")'); height: 300px;">
+        <div class="overlay" style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+        <div class="container h-100 position-relative" style="z-index: 2;">
             <div class="row h-100 align-items-center">
-                <div class="col-12">
-                    <div class="breadcumb-content">
-                        <h3 class="breadcumb-title">Service Request</h3>
-                    </div>
+                <div class="col-12 text-center text-white">
+                    <h3 class="breadcumb-title">Service Request</h3>
                 </div>
             </div>
         </div>
     </section>
+}
+
+@if (User.IsInRole("Admin"))
+{
+    <h2 class="mb-4 text-primary">Service Management</h2>
 }
 
 <section class="section-padding-100">
@@ -53,18 +57,23 @@
         @if (User.IsInRole("HomeOwner"))
         {
             <div class="mb-4 text-end">
-                <a asp-action="Create" class="btn btn-primary">Create New Service Request</a>
+                <a asp-action="Create" class="btn btn-primary btn-lg shadow-sm">
+                    <i class="bi bi-plus-circle"></i> Create New Service Request
+                </a>
             </div>
         }
 
         @if (!Model.Any())
         {
-            <p class="text-center">No service requests available at the moment.</p>
+            <div class="text-center my-5">
+                <i class="bi bi-inbox display-1 text-muted"></i>
+                <p class="text-muted mt-3">No service requests available at the moment.</p>
+            </div>
         }
         else
         {
             <div class="table-responsive">
-                <table class="table table-striped table-hover">
+                <table class="table table-striped table-hover table-bordered rounded shadow-sm">
                     <thead class="table-dark">
                         <tr>
                             <th>Title</th>
@@ -99,10 +108,14 @@
                                         @if (item.Status == "Pending")
                                         {
                                             <form asp-action="Approve" asp-route-id="@item.Id" method="post" style="display:inline;">
-                                                <button type="submit" class="btn btn-success btn-sm">Approve</button>
+                                                <button type="submit" class="btn btn-success btn-sm shadow-sm">
+                                                    <i class="bi bi-check-circle"></i> Approve
+                                                </button>
                                             </form>
                                             <form asp-action="Decline" asp-route-id="@item.Id" method="post" style="display:inline;">
-                                                <button type="submit" class="btn btn-danger btn-sm">Decline</button>
+                                                <button type="submit" class="btn btn-danger btn-sm shadow-sm">
+                                                    <i class="bi bi-x-circle"></i> Decline
+                                                </button>
                                             </form>
                                         }
                                         else

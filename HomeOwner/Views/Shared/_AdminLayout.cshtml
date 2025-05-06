@@ -14,51 +14,52 @@
     <div class="sidebar">
         <!-- Add the image at the top of the sidebar -->
         <div class="sidebar-header">
-            <img src="~/img/core-img/logo.png" alt="Admin Logo"/>
+            <img src="~/img/core-img/logo.png" alt="Admin Logo" />
         </div>
 
         <!-- Sidebar navigation links with icons -->
-        <a asp-controller="Admin" asp-action="AdminDashboard">
+        <a asp-controller="Admin" asp-action="AdminDashboard" class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Admin" && ViewContext.RouteData.Values["Action"]?.ToString() == "AdminDashboard" ? "active" : "")">
             <i class="fas fa-tachometer-alt"></i> Dashboard
         </a>
-        <a asp-controller="AdminUsers" asp-action="Index">
+        <a asp-controller="AdminUsers" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "AdminUsers" ? "active" : "")">
             <i class="fas fa-users"></i> User Management
         </a>
-        <a asp-controller="Announcements" asp-action="Index">
+        <a asp-controller="Announcements" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Announcements" ? "active" : "")">
             <i class="fas fa-bullhorn"></i> Announcements
         </a>
-        <a asp-controller="Facility" asp-action="Index">
+        <a asp-controller="Facility" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Facility" ? "active" : "")">
             <i class="fas fa-building"></i> Manage Facilities
         </a>
-        <a asp-controller="FacilityReservation" asp-action="Index">
+        <a asp-controller="FacilityReservation" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "FacilityReservation" ? "active" : "")">
             <i class="fas fa-calendar-check"></i> Facility Reservation
         </a>
-        <a asp-controller="ServiceRequest" asp-action="Index">
+        <a asp-controller="ServiceRequest" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "ServiceRequest" ? "active" : "")">
             <i class="fas fa-tools"></i> Service Requests
         </a>
-        <a asp-controller="Documents" asp-action="Index">
+        <a asp-controller="Documents" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Documents" ? "active" : "")">
             <i class="fas fa-file-alt"></i> Document Management
         </a>
-        <a asp-controller="CommunityForum" asp-action="Index">
+        <a asp-controller="CommunityForum" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "CommunityForum" ? "active" : "")">
             <i class="fas fa-comments"></i> Community Forum
         </a>
-        <a asp-controller="SecurityFeatures" asp-action="Index">
+        <a asp-controller="SecurityFeatures" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "SecurityFeatures" ? "active" : "")">
             <i class="fas fa-shield-alt"></i> Security Features
         </a>
-        <a asp-controller="Events" asp-action="Index">
+        <a asp-controller="Events" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Events" ? "active" : "")">
             <i class="fas fa-calendar-alt"></i> Event Calendar
         </a>
-        <a asp-controller="Feedback" asp-action="Index">
+        <a asp-controller="Feedback" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Feedback" ? "active" : "")">
             <i class="fas fa-comment-dots"></i> Feedback
         </a>
-        <a asp-controller="ContactDirectory" asp-action="Index">
+        <a asp-controller="ContactDirectory" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "ContactDirectory" ? "active" : "")">
             <i class="fas fa-address-book"></i> Contact Directory
         </a>
-        <a asp-controller="Reports" asp-action="Index">
+        <a asp-controller="Reports" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"]?.ToString() == "Reports" ? "active" : "")">
             <i class="fas fa-chart-bar"></i> Reports
         </a>
         <partial name="_LoginPartial" />
     </div>
+
 
     <div class="content">
         @RenderBody()
