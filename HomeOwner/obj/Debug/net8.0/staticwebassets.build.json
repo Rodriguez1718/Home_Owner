@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vOLPbzoxl85IVHCdN6SFs6zbLWa7uNuCjd1dTVB3muA=",
+  "Hash": "CnECmMbpyDQSjeOlETZPEkGU8askvwhAXoo38InAfqU=",
   "Source": "HomeOwner",
   "BasePath": "_content/HomeOwner",
   "Mode": "Default",
@@ -1753,8 +1753,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "cblx967oll",
-      "Integrity": "2CQJ2+bqwKnZpM7o2HLgZ84jShbNlWgnpLhJCHb4w2I=",
+      "Fingerprint": "v8lo4pa0jy",
+      "Integrity": "j6mzXolMSLcHpObftoGkG56quDjHv5F2G3CnD4T3tHY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\admin.css"
@@ -6342,51 +6342,6 @@
       ]
     },
     {
-      "Route": "css/admin.cblx967oll.css",
-      "AssetFile": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\css\\admin.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2574"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"2CQJ2+bqwKnZpM7o2HLgZ84jShbNlWgnpLhJCHb4w2I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 07:45:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "cblx967oll"
-        },
-        {
-          "Name": "label",
-          "Value": "css/admin.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-2CQJ2+bqwKnZpM7o2HLgZ84jShbNlWgnpLhJCHb4w2I="
-        }
-      ]
-    },
-    {
       "Route": "css/admin.css",
       "AssetFile": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\css\\admin.css",
       "Selectors": [],
@@ -6397,7 +6352,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2574"
+          "Value": "2764"
         },
         {
           "Name": "Content-Type",
@@ -6405,11 +6360,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2CQJ2+bqwKnZpM7o2HLgZ84jShbNlWgnpLhJCHb4w2I=\""
+          "Value": "\"j6mzXolMSLcHpObftoGkG56quDjHv5F2G3CnD4T3tHY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 07:45:35 GMT"
+          "Value": "Wed, 07 May 2025 11:03:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6419,7 +6374,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2CQJ2+bqwKnZpM7o2HLgZ84jShbNlWgnpLhJCHb4w2I="
+          "Value": "sha256-j6mzXolMSLcHpObftoGkG56quDjHv5F2G3CnD4T3tHY="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.v8lo4pa0jy.css",
+      "AssetFile": "C:\\Users\\admin47\\Desktop\\Home_Owner\\HomeOwner\\wwwroot\\css\\admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2764"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j6mzXolMSLcHpObftoGkG56quDjHv5F2G3CnD4T3tHY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 11:03:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v8lo4pa0jy"
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j6mzXolMSLcHpObftoGkG56quDjHv5F2G3CnD4T3tHY="
         }
       ]
     },

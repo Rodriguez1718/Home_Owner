@@ -4,33 +4,88 @@
 
 @model IEnumerable<HomeOwner.Models.Facility>
 
-<h2 class="mb-4 text-primary">Facilities</h2>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Capacity</th>
-            <th>Location</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var facility in Model)
-        {
-            <tr>
-                <td>@facility.Name</td>
-                <td>@facility.Description</td>
-                <td>@facility.Capacity</td>
-                <td>@facility.Location</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@facility.FacilityId">Edit</a> |
-                    <a asp-action="Delete" asp-route-id="@facility.FacilityId">Delete</a>
-                </td>
-            </tr>
+<style>
+    @@keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
         }
-    </tbody>
-</table>
 
-<a href="@Url.Action("Create", "Facility")" class="btn btn-primary">Add New Facility</a>
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fade-in-up {
+        animation: fadeInUp 0.5s ease-in-out;
+    }
+
+    tbody tr {
+        opacity: 0;
+        animation: fadeInUp 0.6s ease forwards;
+    }
+
+        tbody tr:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        tbody tr:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        tbody tr:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        tbody tr:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        tbody tr:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+</style>
+
+
+<div class="container py-4 fade-in-up">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-primary fw-bold mb-0">🏛 Facilities</h2>
+        <a href="@Url.Action("Create", "Facility")" class="btn btn-primary">
+            <i class="bi bi-plus-circle me-1"></i> Add Facility
+        </a>
+    </div>
+
+    <div class="table-responsive fade-in-up">
+        <table class="table table-hover table-striped align-middle shadow-sm rounded">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Capacity</th>
+                    <th scope="col">Location</th>
+                    <th scope="col" class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var facility in Model)
+                {
+                    <tr>
+                        <td class="fw-semibold">@facility.Name</td>
+                        <td>@facility.Description</td>
+                        <td>@facility.Capacity</td>
+                        <td>@facility.Location</td>
+                        <td class="text-center">
+                            <a asp-action="Edit" asp-route-id="@facility.FacilityId" class="btn btn-sm btn-outline-warning me-1">
+                                <i class="bi bi-pencil-square"></i> Edit
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@facility.FacilityId" class="btn btn-sm btn-outline-danger">
+                                <i class="bi bi-trash"></i> Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

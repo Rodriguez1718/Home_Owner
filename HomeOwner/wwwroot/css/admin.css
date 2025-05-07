@@ -1,20 +1,32 @@
 ﻿/* Sidebar styling */
 .sidebar {
     height: 100vh;
-    width: 260px; /* Sidebar width */
+    width: 260px;
     position: fixed;
     top: 0;
     left: 0;
-    background: linear-gradient(180deg, #1E1E2F, #2A2A40); /* Gradient background */
+    background: linear-gradient(180deg, #1E1E2F, #2A2A40);
     padding-top: 30px;
     box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-y: auto; /* Scroll for long content */
-    z-index: 1000; /* Ensure sidebar is above other elements */
-    transition: all 0.3s ease; /* Smooth transition for responsiveness */
+    overflow-y: overlay; /* Prevents jumpy behavior while keeping scroll */
+    scrollbar-width: none; /* Firefox: hide scrollbar */
+    -ms-overflow-style: none; /* IE/Edge: hide scrollbar */
+    z-index: 1000;
+    transition: all 0.3s ease;
 }
+
+    .sidebar:hover {
+        overflow-y: auto; /* Show scroll on hover only if needed */
+    }
+
+    /* Hide scrollbar visually but keep functionality */
+    .sidebar::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
 
     /* Sidebar links */
     .sidebar a {
@@ -24,20 +36,21 @@
         color: #E0E0E0;
         display: flex;
         align-items: center;
-        transition: all 0.3s ease;
+        transition: all 0.2s ease-in-out;
         border-left: 4px solid transparent;
         gap: 10px;
+        border-radius: 0 30px 30px 0;
     }
 
         .sidebar a:hover {
             background-color: #3A3A50;
             color: #ffffff;
             border-left: 4px solid #4FC3F7;
-            transform: scale(1.02); /* Slight zoom effect */
+            transform: scale(1.01);
         }
 
         .sidebar a.active {
-            background-color: #4FC3F7; /* Highlight active link */
+            background-color: #4FC3F7;
             color: #ffffff;
             border-left: 4px solid #ffffff;
             font-weight: bold;
@@ -51,12 +64,9 @@
             transition: color 0.3s ease;
         }
 
-        .sidebar a:hover i {
-            color: #ffffff;
-        }
-
+        .sidebar a:hover i,
         .sidebar a.active i {
-            color: #ffffff; /* Icon color when active */
+            color: #ffffff;
         }
 
 /* Sidebar header */
@@ -72,34 +82,20 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-/* Scrollbar styling for sidebar */
-.sidebar::-webkit-scrollbar {
-    width: 8px;
-}
-
-.sidebar::-webkit-scrollbar-thumb {
-    background-color: #4FC3F7;
-    border-radius: 4px;
-}
-
-.sidebar::-webkit-scrollbar-track {
-    background-color: #1E1E2F;
-}
-
 /* Main content area */
 .content {
-    margin-left: 260px; /* Adjusted for sidebar width */
+    margin-left: 260px;
     padding: 30px;
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F4F6F8;
     min-height: 100vh;
     color: #333;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    border-radius: 10px; /* Rounded corners for content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow-x: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Optional: Style the partial login */
+/* Optional login partial styling */
 .sidebar .login-partial {
     margin-top: auto;
     padding: 15px 20px;
@@ -107,55 +103,4 @@
     color: #ccc;
     border-top: 1px solid #444;
     text-align: center;
-}
-/* Service Request */
-.table {
-    border-collapse: separate;
-    border-spacing: 0 10px; /* Add spacing between rows */
-}
-
-    .table th, .table td {
-        vertical-align: middle; /* Center content vertically */
-    }
-
-.badge {
-    font-size: 0.9rem;
-    padding: 0.5em 0.75em;
-}
-
-
-/* Fix for content overflow */
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 200px; /* Narrower sidebar for smaller screens */
-    }
-
-    .content {
-        margin-left: 200px; /* Adjust content margin */
-    }
-}
-
-@media (max-width: 576px) {
-    .sidebar {
-        width: 100%; /* Full-width sidebar for very small screens */
-        height: auto;
-        position: relative;
-    }
-
-    .content {
-        margin-left: 0; /* No margin for content */
-    }
 }

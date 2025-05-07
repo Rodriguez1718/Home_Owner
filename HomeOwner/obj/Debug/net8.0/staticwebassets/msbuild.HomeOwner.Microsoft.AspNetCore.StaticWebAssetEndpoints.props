@@ -240,17 +240,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hz2s51bkdx"},{"Name":"integrity","Value":"sha256-44i9Sd6btdLQi83evt0IJu9OigEVOuH0gdtsw\u002BVuMSM="},{"Name":"label","Value":"_content/HomeOwner/css/account.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"467"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002244i9Sd6btdLQi83evt0IJu9OigEVOuH0gdtsw\u002BVuMSM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 06 May 2025 07:45:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/HomeOwner/css/admin.cblx967oll.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\admin.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cblx967oll"},{"Name":"integrity","Value":"sha256-2CQJ2\u002BbqwKnZpM7o2HLgZ84jShbNlWgnpLhJCHb4w2I="},{"Name":"label","Value":"_content/HomeOwner/css/admin.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2574"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00222CQJ2\u002BbqwKnZpM7o2HLgZ84jShbNlWgnpLhJCHb4w2I=\u0022"},{"Name":"Last-Modified","Value":"Tue, 06 May 2025 07:45:35 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HomeOwner/css/admin.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\admin.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2CQJ2\u002BbqwKnZpM7o2HLgZ84jShbNlWgnpLhJCHb4w2I="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2574"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00222CQJ2\u002BbqwKnZpM7o2HLgZ84jShbNlWgnpLhJCHb4w2I=\u0022"},{"Name":"Last-Modified","Value":"Tue, 06 May 2025 07:45:35 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-j6mzXolMSLcHpObftoGkG56quDjHv5F2G3CnD4T3tHY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2764"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022j6mzXolMSLcHpObftoGkG56quDjHv5F2G3CnD4T3tHY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 11:03:16 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HomeOwner/css/admin.v8lo4pa0jy.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\admin.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"v8lo4pa0jy"},{"Name":"integrity","Value":"sha256-j6mzXolMSLcHpObftoGkG56quDjHv5F2G3CnD4T3tHY="},{"Name":"label","Value":"_content/HomeOwner/css/admin.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2764"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022j6mzXolMSLcHpObftoGkG56quDjHv5F2G3CnD4T3tHY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 11:03:16 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HomeOwner/css/Announcements.8daxhoqw78.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Announcements.css'))</AssetFile>
